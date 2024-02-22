@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Client module - Colibri CMS</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../index.html">Colibri CMS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Jackpot <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/jpserver/index.html" class="dropdown-item">Български</a>
+</li>
+            
+<li>
+    <a href="../../jpserver/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/jpserver/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CMS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/colibri/v2_1/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v2.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/colibri/v2_1/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SMIB <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.4</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/smib/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../smib/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/smib/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Visualization <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/visual/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../visual/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/visual/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#client-module" class="nav-link">Client module</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#search-for-a-customer" class="nav-link">Search for a customer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#filter-by-group" class="nav-link">Filter by group</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#addedit-group" class="nav-link">Add/Edit Group</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#addedit-client" class="nav-link">Add/Edit Client</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pay-moneyback" class="nav-link">Pay moneyback</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pay-a-moneyback-without-a-card" class="nav-link">Pay a moneyback without a card</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#remove-card-loss" class="nav-link">Remove card loss</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#coupon-printing" class="nav-link">Coupon printing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#print-coupons-without-a-card" class="nav-link">Print coupons without a card</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#free-coupons" class="nav-link">Free coupons</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#add-money-to-a-card" class="nav-link">Add money to a card</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pay-money-from-a-card" class="nav-link">Pay money from a card</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#money-through-atm-terminal" class="nav-link">Money through ATM terminal</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#quick-customer-reference" class="nav-link">Quick customer reference</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#group-redirection" class="nav-link">Group redirection</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#book-a-machine-for-a-customer" class="nav-link">Book a machine for a customer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="client-module">Client module</h1>
+<p>This is the main module for customer management.</p>
+<p><img alt="Main window" src="../../img/colibri/cust_mod.png" /></p>
+<h2 id="search-for-a-customer">Search for a customer</h2>
+<p>At the top of the main window is a search box.</p>
+<p>From the drop-down menu, select criterion example <strong>Name</strong> and enter Name or first letters.
+By pressing the <strong>enter</strong> button the system will perform wilting.</p>
+<blockquote>
+<p><h5 style = "color: red"> Attention! <br>
+Recognizes lowercase and uppercase letters. </h5></p>
+</blockquote>
+<h2 id="filter-by-group">Filter by group</h2>
+<p>In the left hour, there are built-in filters on the main window. With a single click on one of the groups,
+the system will show the clients in this group.</p>
+<h2 id="addedit-group">Add/Edit Group</h2>
+<p>Use the button to add a new group</p>
+<h4 style = "color: blue"> Add group </h4>
+
+<p>To edit an existing group:</p>
+<h4 style = "color: blue"> Double-click on the group name from [filter](cust.html#filter-by-group) </h4>
+
+<p>The system will open a group setup window</p>
+<p><img alt="Group Setup" src="../../img/colibri/group_edit.png" /></p>
+<h4 style = "color: blue"> Changing group settings will change all users in the group. <br>
+Unless explicitly specified, the user uses individual settings. <br>
+<a href="cust.html#_18"> Look Here </a> </h4>
+
+<h3 id="group-name">Group name</h3>
+<p>The name is free text. Used to allow the user to recognize one group from another.</p>
+<blockquote>
+<ul>
+<li>Allowed to choose</li>
+</ul>
+</blockquote>
+<pre><code> Dealers can only choose this group
+</code></pre>
+<blockquote>
+<p><h5 style = "color: red"> Attention! <br>
+<ul>
+<li> Recognizes lowercase and uppercase letters </li>
+<li> No duplicate names possible </li> </ul> </h5></p>
+</blockquote>
+<h3 id="processes">Processes</h3>
+<p>These are the checkers in a square <strong>Process</strong></p>
+<p>They determine whether the group will deduct for <strong>Money Beck</strong>, <strong>Coupons</strong> and <strong>Bonus chests</strong></p>
+<blockquote>
+<p><h5 style = "color: red"> Attention! <br>
+In case the process is stopped from here, then no setting of the respective process will work </h5></p>
+</blockquote>
+<h3 id="money-beck">Money Beck</h3>
+<p>These are the settings of the Money Back system</p>
+<p>See box <strong>Monyback</strong></p>
+<p>It connects two fields:</p>
+<h4 id="percentage-deduction">Percentage deduction</h4>
+<p>The deduction rate is based on a bet or works as an individual jackpot server.</p>
+<h3 style = "color: red"> 1 is 1% of each bet </h3>
+
+<blockquote>
+<p><h5 style = "color: red"> Attention! <br>
+1 BGN = 100 credit
+1% of 100 credit = 1
+</h5></p>
+</blockquote>
+<h4 id="minimum-payout">Minimum payout</h4>
+<p>The minimum amount in BGN that the client must reach in order to be paid by the croupier.
+Only amounts greater than or equal to the set amount can be paid.</p>
+<blockquote>
+<p><h5 style = "color: red"> Attention! <br>
+The system pays only full amounts. The accumulated pennies remain on the customer's balance sheet without being lost
+</h5></p>
+</blockquote>
+<h3 id="maximum-payout">Maximum payout</h3>
+<p>If the money bag reaches the set amount, leva stops accumulating until the customer takes it</p>
+<h3 id="raffle-coupons">Raffle coupons</h3>
+<p>This is the raffle coupon system.
+Take a look at the <strong>Draw</strong> box which has two settings</p>
+<h4 id="method-of-calculation">Method of calculation</h4>
+<p>There are two possible ways to calculate the number of coupons:
+ * Beth (money rolling)
+ * By Login (Deposit money)</p>
+<blockquote>
+<p><h5 style = "color: red"> Attention! <br>
+We do not overwrite input calculation.
+It gives prerequisites to abuse input/output.
+Login counting will be removed in future versions.</h5></p>
+</blockquote>
+<h4 id="coefficient">Coefficient</h4>
+<p>The odds ratio is based on 100</p>
+<p>or <h3 style = "color: red"> 1% = per 1 coupon per BGN 100 Bet <br>
+0.5 = half a coupon for BGN 100 </h3></p>
+<h4 id="bonuses">Bonuses</h4>
+<p>This is the system for setting up the boxes with bonuses appearing on the display of the SMIB controller.</p>
+<p>Use the scroll wheel until you see</p>
+<p><img alt="Group bonuses" src="../../img/colibri/group_bonus.png" /></p>
+<h5 id="section-sumy">Section Sumy</h5>
+<ul>
+<li>Amount option</li>
+</ul>
+<p>This is the amount to show the bonus. Depending on the selected option, it is by bet or bet.
+If the <strong>Lost Money</strong> option is selected, the bonus will be displayed after the customer's total
+the specified amount - the credit setting below <a href="config_system.html">Here</a></p>
+<ul>
+<li>Scroll bonus</li>
+</ul>
+<p>Scrolling a bonus requires AFT. With option 1 set, the bonus will not require a scroll.
+At 2 you will need to scroll twice.</p>
+<p>Scrolling can be input or:</p>
+<p>With a bonus of BGN 20 by scrolling x2, the exit will be possible on a BGN 40 credit.
+In case of active option <strong>Wait entry</strong> equal to the bonus with scrolling x2.
+At BGN 20 bonus, the system will wait for BGN 20
+entrance, out will be possible when reaching a loan of BGN 80.</p>
+<p>Scroll with <strong>Bet</strong> option:</p>
+<p>The credit will be ignored and the system will allow an out when the beta becomes equal to or greater than the bonus X
+the scroll or credit option falls under <a href="config_system.html">Look here</a>.</p>
+<ul>
+<li>Bonus warnings</li>
+</ul>
+<p>When the customer's total reaches the specified amount, the display will show an invitation inviting the customer to
+ download a paper bonus.</p>
+<h5 id="section-types-of-chests">Section types of chests</h5>
+<ul>
+<li>
+<p>By IN</p>
+<p>The bonus will be calculated according to the customer's total.</p>
+</li>
+<li>
+<p>By Bet</p>
+<p>The bonus will be calculated on the Bet of the respective machine.</p>
+<p><strong>Does not calculate beta of all machines the customer has built during the day</strong></p>
+</li>
+<li>
+<p>Previous total</p>
+<p>It detects the difference between money in and money out. Example: BGN 20 is inserted and 50 withdrawn, the total will be -30 and the amount will decrease. If there are 50 entered and 20 withdrawn, the total will be BGN 30.</p>
+</li>
+<li>
+<p>Direct</p>
+<p>Immediately after placing the card on the client, a bonus will be displayed</p>
+</li>
+<li>
+<p>Restricted</p>
+<p>The bonus passes as input. It cannot be withdrawn, but the profit can.</p>
+<blockquote>
+<p>Example: 100 bonus comes in and the customer makes one spin for 1 BGN. You press out and it can't. You make a second spin for 1 BGN and the machine gives you back 10. The credit becomes 100-2+5 If you press cashout you can get 3 BGN</p>
+</blockquote>
+</li>
+<li>
+<p>Additional setup options</p>
+<ul>
+<li>
+<p>Withholding</p>
+<p>If the bonus is not lost, a <strong>Detain</strong> will be made.
+The withholding can be referenced or credited to the croupier's cash register <a href="config_system.html">View Trick</a></p>
+</li>
+<li>
+<p>Once per day</p>
+<p>The bonus will only be issued once a day for one customer. There is no indication of how many cards the client is playing.</p>
+</li>
+<li>
+<p>Previous total </p>
+<p>Active with bonus type  <strong>By IN</strong> and <strong>Once per day</strong>.
+The bonus will only be displayed in a situation where the customer has lost the corresponding amount.
+<strong>The total of the customer is calculated from all the machines he has played</strong></p>
+</li>
+<li>
+<p>Current month</p>
+<p>Active with bonus type  <strong>By IN</strong> and <strong>Once per day</strong>.
+The bonus will only be displayed in a situation where the customer has lost the corresponding amount.
+<strong>The total of the customer is calculated from all the machines he has played</strong></p>
+</li>
+<li>
+<p>Wait for entry</p>
+<p>After selecting the bonus box and accepting the bonus, the system will wait for an entry equal to the amount.
+for a bonus.</p>
+</li>
+<li>
+<p>Many from redirect</p>
+<p>One bonus per day has such a checkbox (tick). A lot of redirect it's one bonus from one group per day, but it's not a problem to have 2,3 and more if they are from different groups</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+<ul> <li> All bonuses can be accepted or rejected. </li>
+<li> Canceled bonuses remain active until a daily report is released. </li>
+<li> Canceled bonuses can be played at any time and on any machine. </li>
+<li> The system accepts credit when removing a card as OUT </li>
+<li> The system accepts the credit when inserting a card as IN </li>
+<li> Be careful with the pennies in the loan. The total may not reach the required amount. </li>
+<li> Permissible difference from pennies <a href="config_system.html">Look here</a> </li>
+</ul> </h4> <br> <br>
+<h4 style = "color: blue"> <br> <br>
+The bonus system can work <strong>With AFT</strong> and <strong>Without AFT</strong>
+<ul> <li> With AFT bonuses will go directly into the machine </li>
+<li> Without AFT, the bonus will require between one and three spins </li> </ul>
+</h4>
+<h4 style = "color: red"> Without AFT, adjust the credit in the machine </h4></p>
+</blockquote>
+<h5 id="days-of-the-week">Days of the week</h5>
+<p>Bonuses will be active only on selected days.</p>
+<p>When activated on <strong>Wednesday</strong> the bonuses will be active from the daily report released on Wednesday to the daily
+report released on Thursday.</p>
+<p>For a special setting, see <a href="cust.html#group-redirection">Group Redirection</a></p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+In case of using <strong>Group redirection</strong> select option <strong>All Days</strong>
+</h4></p>
+</blockquote>
+<h5 id="bonus-cup-section">Bonus Cup Section</h5>
+<p>In its main part is a bowl in which you put a number of bonuses of a certain amount.</p>
+<p>The more bonuses there are of a certain amount, the greater the chance that they will be withdrawn.</p>
+<p>The cup does not end and with each draw the old bonuses are taken out and refilled.</p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+Withdrawal of bonuses is random. <br>
+All crates contain 5 amounts randomly withdrawn. <br>
+From there it depends on the customer's choice</h4></p>
+</blockquote>
+<h2 id="addedit-client">Add/Edit Client</h2>
+<p>Adding a client is done by the <strong>New Client</strong> button</p>
+<p>To edit, select the required client and press <strong>Edit Client</strong></p>
+<p>The following window will open:</p>
+<p><img alt="New Client" src="../../img/colibri/cust_edit.png" /></p>
+<h3 id="add-a-customer-photo">Add a customer photo</h3>
+<p>In development. No active button.</p>
+<h3 id="section-group">Section Group</h3>
+<p>Select a customer group from the drop-down menu.</p>
+<p>Required attribute.</p>
+<p>If no group has been created, use <a href="cust.html#addedit-group">Add Group</a></p>
+<h3 id="maps-section">Maps section</h3>
+<p><a href="config_system.html#printers-and-readers">Requires active RFID reader</a></p>
+<p>Add customer cards.</p>
+<p>There is no limit to the number of cards.</p>
+<p>The cards do not contain any information about the customer or the bonuses accumulated from the sky.</p>
+<ul>
+<li>
+<p>Button <img alt="Add" src="../../img/colibri/list-add.png" /></p>
+<p>Adds a customer card.</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Insert the card into the reader and press <strong>Save</strong>
+Katra has been added and all machines will recognize the customer.</p>
+</li>
+<li>
+<p>Button <img alt="Remove" src="../../img/colibri/list-remove.png" /></p>
+<p>Remove a specific card from a customer.</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Insert the card into the reader and press <strong>Save</strong>
+The card will be removed and will not be attached to any machine.</p>
+</li>
+<li>
+<p>Button <img alt="Reset" src="../../img/colibri/media-playlist-shuffle.png" /></p>
+<p>Removes all customer cards.
+All cards will be removed and will not be active.</p>
+</li>
+</ul>
+<h3 id="personal-information">Personal information</h3>
+<p>Mandatory <strong>Customer name</strong> and <strong>Location</strong></p>
+<p>The name must be unique. Recognizes lowercase and uppercase letters.</p>
+<p><strong>Location</strong> is selected from the drop-down menu.</p>
+<p>In case it is missing, use the <strong>Add</strong> button and it will open</p>
+<p><img alt="City" src="../../img/colibri/sity.png" /></p>
+<p>The name of the city must be unique. Recognizes lowercase and uppercase letters.
+After saving <strong>Location</strong> will appear in the drop-down menu.</p>
+<p>All other attributes can be left blank.</p>
+<blockquote>
+<p><h2 style = "color: red"> Attention! <br>
+In case you decide to fill in the remaining attributes <br>
+Observe the personal data law of the respective country. </h2></p>
+</blockquote>
+<h3 id="prohibition">Prohibition</h3>
+<p>It will deactivate the client. The customer's cards will not be recognized by the machines.
+Will not allow payment of <strong>Money Beck</strong> and printing of <strong>Coupons</strong></p>
+<h3 id="registered-in-the-nra">Registered in the NRA</h3>
+<p>Clients who have registered with the NRA in the register for gambling addicts. It wants a token and they should not be allowed to play.</p>
+<h3 id="pin-code">PIN code</h3>
+<p>In development. Not used in this revision.</p>
+<h3 id="personal-settings">Personal settings</h3>
+<p>Indicates that the client does not depend on the group and has individual settings.</p>
+<p>In case of group change, this client's settings will not be changed.</p>
+<p>To set up the client individually look <a href="cust.html#addedit-client">Here</a> the logic of all settings works like
+<a href="cust.html#addedit-group">New Group</a> settings</p>
+<h2 id="pay-moneyback">Pay moneyback</h2>
+<p>Payment of <strong>Money Back</strong> <a href="config_system.html#printers-and-readers">Requires active RFID reader</a></p>
+<p>Requires the client's frame to be marked by the croup of the working reader.</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Insert the card into the reader. If the amount of <a href="cust.html#addedit-group">accumulated Money Beck corresponds to the minimum set</a></p>
+<p>Accumulated <strong>Money back</strong> will be zeroed and will be deducted from the croupier's cash register.</p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+Requires access rights
+Only the full amount is paid. The pennies remain in the customer's account. </h4></p>
+</blockquote>
+<h2 id="pay-a-moneyback-without-a-card">Pay a moneyback without a card</h2>
+<p>Select customer from <a href="cust.html#client-module">main window</a></p>
+<p>A right-click will open a menu.</p>
+<p>Choose <strong>Pay MoneyBack without a card</strong></p>
+<p>Accumulated <strong>Money back</strong> will be zeroed and will be deducted from the croupier's cash register.</p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+Requires access rights
+Only the full amount is paid. The pennies remain in the customer's account. </h4></p>
+</blockquote>
+<h2 id="remove-card-loss">Remove card loss</h2>
+<p>If the rfid reader does not work properly, a client is lost.</p>
+<p>Each loss is accumulated with general statistics such as input and output.</p>
+<p>It is possible that the statistics will receive an unexpected total and will not open a bonus.</p>
+<p>The button will remove the required statistics.</p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+Removes all Credit IN and Credit OUT <br>
+Check the loss statistics first
+Use as a last resort! </h4></p>
+</blockquote>
+<h2 id="coupon-printing">Coupon printing</h2>
+<p>Printing __ Coupons__ <a href="config_system.html#printers-and-readers">Requires active RFID reader</a></p>
+<p>Requires the client's frame to be marked by the croup of the working reader.</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Insert the card into the reader.</p>
+<p>The accumulated <em>Coupons</em> will be reset and will be printed on a POS printer.</p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+Only the entire coupon is printed. The rest remains in the client's profile <br>
+Requires POS printer settings: <br>
+<a href="config_system.html">Look</a> </h4></p>
+</blockquote>
+<h2 id="print-coupons-without-a-card">Print coupons without a card</h2>
+<p>Printing of <strong>Coupons</strong></p>
+<p>Insert the card into the reader.</p>
+<p>The accumulated <em>Coupons</em> will be reset and will be printed on a pos printer.</p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+Only the entire coupon is printed. The rest remains in the client's profile <br>
+Requires POS printer settings: <br>
+<a href="config_system.html">View</a> </h4></p>
+</blockquote>
+<h2 id="free-coupons">Free coupons</h2>
+<p>In the case of a machine without the possibility of mounting an SMIB controller, the coupons can be printed
+ freely.</p>
+<p><img alt="Free Talon" src="../../img/colibri/cust_free_talon.png" /></p>
+<p>Enter the number of coupons and Customer Name. The coupons will be printed.</p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+Requires POS printer settings: <br>
+<a href="config_system.html">Look</a> </h4></p>
+</blockquote>
+<h2 id="add-money-to-a-card">Add money to a card</h2>
+<p>This is a casino cash register. Requires a customer card.</p>
+<p>Requires AFT and setting of <a href="config_system.html">SMIB keysystem section</a></p>
+<p>The money added to the customer's card will be added to the croupier's cash register.</p>
+<p>Mark the card on the reader</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>A window will load</p>
+<p><img alt="Add money" src="../../img/colibri/add_cust_mony.png" /></p>
+<p>After inserting the card into the machine, the machine will make an IN for the same amount
+This amount will not be taken into account in the report.</p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+Does not work with two cards. The first machine will take all the credit
+In development. </h4></p>
+</blockquote>
+<h2 id="pay-money-from-a-card">Pay money from a card</h2>
+<p>This is a casino cash register. Requires a customer card.</p>
+<p>Requires AFT and setting of <a href="config_system.html">SMIB keysystem section</a></p>
+<p>The money paid by the croupier will be taken out of the croupier's cash register and will be zeroed
+at the client's cash desk.</p>
+<p>Mark the card on the reader</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Press <strong>Record</strong></p>
+<p>In case the customer pulls out a card from a machine.
+The machine will make an OUT that will not be taken into account in the report.</p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+Does not work with two cards
+In development. </h4></p>
+</blockquote>
+<h2 id="money-through-atm-terminal">Money through ATM terminal</h2>
+<p>In the presence of a POS terminal.</p>
+<p>The amount received through the terminal and put in the machine is an expense for the croupier.</p>
+<p>The client is selected and <strong>ATM</strong> is selected with the right mouse button</p>
+<p><img alt="Add money" src="../../img/colibri/add_cust_mony.png" /></p>
+<p>The amount of the transaction is selected.</p>
+<p>The amount will be deducted from the cash desk of <strong>Croupier</strong> and there is no need to write an expense.</p>
+<h2 id="quick-customer-reference">Quick customer reference</h2>
+<p>This is a quick reference.
+Serves when we want to quickly check the client and divide it into a group.</p>
+<p>Opens with <strong>Double click of the client</strong></p>
+<p><img alt="Quick Reference" src="../../img/colibri/cust_ststistic.png" /></p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+See the reference date. <br> </h4></p>
+</blockquote>
+<h2 id="group-redirection">Group redirection</h2>
+<p>At certain dates and times, one group of customers may be redirected with the settings to another.</p>
+<p><strong>Fine settings</strong></p>
+<p>Opens with the right mouse button <a href="cust.html#filter-by-group">on filter</a></p>
+<p>It will load</p>
+<p><img alt="Redirect rules" src="../../img/colibri/cust_group_redirect.png" /></p>
+<p>Group redirection rules have unique names.</p>
+<ul>
+<li>
+<p>Button <img alt="Add" src="../../img/colibri/list-add.png" /></p>
+<p>Adds a new redirect rule.</p>
+</li>
+<li>
+<p>Button <img alt="Remove" src="../../img/colibri/list-remove.png" /></p>
+<p>Deletes a redirect rule.</p>
+</li>
+</ul>
+<p>The system allows all clients from group <strong>X</strong> to accept the settings of group <strong>Y</strong>
+in a certain period of time.</p>
+<blockquote>
+<p><h4 style = "color: red"> Attention! <br>
+Does not work for clients with individual settings
+<a href="cust.html#addedit-client">Look HERE </a> 
+Bonuses redirects have a lower priority and are not executed
+if there is another active redirect </h4></p>
+<p><h3 style = "color: red"> Важно! <br>
+Bonus validity days are not assigned when redirecting. <br>
+Or if group <strong>X</strong> does not work in the sequence, the redirection will not work either.
+</h3></p>
+</blockquote>
+<p>When you bring a redirect, you will see</p>
+<p><img alt="Add Redirect" src="../../img/colibri/cust_redirect_row.png" /></p>
+<p>The redirect name is free, but must be unique. Used for user recognition.</p>
+<p>The bonuses will appear in the reports with the name of the customer's recovery group, not with the redirected one.</p>
+<ul>
+<li>
+<p>From Group</p>
+<p>This is the group that changes its settings</p>
+</li>
+<li>
+<p>To be done</p>
+<p>The group whose settings to accept. Even if the <strong>Y</strong> group has no customers
+All customers of group <strong>X</strong> will take its settings in the specified interval. <br>
+The interval is <strong>day of the week</strong> from <strong>hour to hour</strong></p>
+</li>
+<li>
+<p>When total to </p>
+<p>If the option is activated, it changes the amount of bonuses if the total is based on the previous day, depending
+of the amount lost. There should be no redirects with a higher priority. </p>
+</li>
+</ul>
+<h2 id="book-a-machine-for-a-customer">Book a machine for a customer</h2>
+<p>Right-click on the name of the desired customer and select <strong>Reservation</strong></p>
+<p><img alt="Reservation" src="../../img/colibri/reserve.png" /></p>
+<p>Enter when to select the selected machine and use <strong>Save</strong></p>
+<blockquote>
+<p><h4 style = "color: blue"> Attention! <br>
+The selected machine will be locked by SAS
+The machine will be unlocked after inserting a card belonging to a customer or <br>
+After reaching the specified time.
+</h4></p>
+<p><h4 style = "color: red"> Важно! <br>
+In case of an error, use the emergency button <strong>Unlock SMIB</strong> or restart the SMIB controller.
+</h4> </p>
+</blockquote></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

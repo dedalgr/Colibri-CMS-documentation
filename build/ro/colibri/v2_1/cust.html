@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Модул клиенти - Colibri CMS</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../index.html">Colibri CMS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Jackpot <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/jpserver/index.html" class="dropdown-item">Български</a>
+</li>
+            
+<li>
+    <a href="../../../en/jpserver/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../jpserver/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CMS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/colibri/v2_1/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v2.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/colibri/v2_1/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SMIB <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.4</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/smib/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/smib/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../smib/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Visualization <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/visual/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/visual/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../visual/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Модул клиенти</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">Търсене на клиент</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">Филтър по група</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">Добави/Редактирай група</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_18" class="nav-link">Добави/Редактирай клиент</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_25" class="nav-link">Изплати мънибек</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_26" class="nav-link">Изплати мънибек без карта</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_27" class="nav-link">Премахни загуба на карта</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_28" class="nav-link">Печат на талони</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_29" class="nav-link">Печат на талони без карта</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_30" class="nav-link">Свободни талони</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_31" class="nav-link">Добави пари в карта</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_32" class="nav-link">Изплати пари от карта</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#atm" class="nav-link">Пари през ATM терминал</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_33" class="nav-link">Бърза справка за клиент</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_34" class="nav-link">Пренасочване на група</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_35" class="nav-link">Резервация на машина за клиент</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">Модул клиенти</h1>
+<p>Това е основния модул за управление на клиенти. </p>
+<p><img alt="Основен прозорец" src="../../img/colibri/cust_mod.png" /></p>
+<h2 id="_2">Търсене на клиент</h2>
+<p>В най-горната част на основния прозорец се намира поле за търсене.</p>
+<p>От падащото меню се избира критерий пример <strong>Име</strong> и се въвежда Име или първи букви.
+С натискане на бутон <strong>enter</strong> системата ще извърши вилтриране.</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+Разпознава малки и главни букви.</h5></p>
+</blockquote>
+<h2 id="_3">Филтър по група</h2>
+<p>В лявата час има на основния прозорец има вградени филтри. С единичен клик върху някоя от групите
+системата ще покаже криентите намиращи се в тази група.</p>
+<h2 id="_4">Добави/Редактирай група</h2>
+<p>За добавяне на нова група използвайте бутона </p>
+<h4 style="color:blue">Добави група</h4>
+
+<p>За редакция на вече съществуваща група:</p>
+<h4 style="color:blue">Кликнете с двоен клик върху името на групата от [филтъра](cust.html#_3)</h4>
+
+<p>Системата ще отвори прозорец за настройка на група</p>
+<p><img alt="Настройка на група" src="../../img/colibri/group_edit.png" />]</p>
+<h4 style="color:blue">Промяна на настройките на група, ще промени всички потребители в групата.<br>
+Ако изрично не е зададено, че попребителя използва индивидуални настройки.<br>
+<a href="cust.html#_18">Погледни Тук</a></h4>
+
+<h3 id="_5">Име на група</h3>
+<p>Името е свободен текст. Използва се за да може потребителя да разпознае една група от друга.</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+<ul>
+<li>Разпознава малки и главни букви</li>
+<li>Не е въможно повтарящи се имена</li></ul></h5></p>
+</blockquote>
+<h3 id="_6">Процеси</h3>
+<p>Това са чофките в каре <strong>Process</strong></p>
+<p>Те определят дали групата ще отчислява за <strong>Мъни Бек</strong>, <strong>Талони</strong> и <strong>Бонус сандъци</strong></p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+В случай, че процеса е спрян от тук, то нито една настройка на съответния процес няма да работи</h5></p>
+</blockquote>
+<h3 id="_7">Мъни Бек</h3>
+<p>Това са настройките на Мъни Бек системата</p>
+<p>Погледнете карето <strong>Monyback</strong></p>
+<p>То савържа две полета:</p>
+<h4 id="_8">Процент на отчисление</h4>
+<p>Процента на отчисление е на база бет или работи като индифидуален джакпот сървър.</p>
+<h3 style="color:red">1 е 1% от всеки залог</h3>
+
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+1 лев = 100 стотинки
+1% от 100 стотинки = 1 стотинка
+</h5></p>
+</blockquote>
+<h4 id="_9">Минимално изплащане</h4>
+<p>Минималната сума в лева до която трябва да достигне клиента, за да може бъде изплатена от крупието.
+Само суми по-големи или равни на зададената могат да бъдат изплатени.</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+Системата изплаща само цели суми. Натрупаните стотинки остават по баланса на клиенте без да се губят
+</h5></p>
+</blockquote>
+<h3 id="_10">Талони за томбола</h3>
+<p>Това е системата за натрупване на талони за томбола.
+Погледнете карето <strong>Draw</strong> което има две настройки</p>
+<h4 id="_11">Начин на пресмятане</h4>
+<p>Има два възможни начина на пресмятане на броя талони:
+ * По Бет (развъртяни пари)
+ * По Вход (Вкарани пари)</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+Не препивъчваме пресмятане по вход.
+То дава предпоставки да се правят злоупотреби с вход/изход.
+В бъдещи версии ще бъде премахнато пресмятането по вход.</h5></p>
+</blockquote>
+<h4 id="_12">коефициент</h4>
+<p>коефициента на таслните е на база 100</p>
+<p>или <h3 style="color:red">1% = на 1 талон на 100 лева Бет<br>
+0.5 = половин талон на 100 лева</h3></p>
+<h4 id="_13">Бонуси</h4>
+<p>Това е системата за настройки на сандъците с бонуси излизащи на дисплея на SMIB контролера.</p>
+<p>Използвайте скрола докато не видите </p>
+<p><img alt="Бонуси на група" src="../../img/colibri/group_bonus.png" /></p>
+<h5 id="_14">Секция Суми</h5>
+<ul>
+<li>Опция на сума</li>
+</ul>
+<p>Това е сумата на която да се покаже бонуса. В зависимост от избраната опция тя е по вход или бет.
+При избот на опция <strong>На загубени Пари</strong> бонуса ще се покаже след като общия тотал на клиента достигне 
+посочената сума (настройката за кредит под сума <a href="config_system.html#smib_1">Тук</a>)</p>
+<ul>
+<li>Превъртане на бонус</li>
+</ul>
+<p>Превъртането на бонус изисква AFT. При зададена опция 1 бонусът няма да изизква превъртане.
+При 2 ще е нужно да се превърти двапъти.</p>
+<p>Превъртането може да е по вход или:</p>
+<p>При бонус 20 лева с превъртане х2 изхода ще стане възможен на 40 лева кредит.
+В случай на активна опция <strong>Изчакай вход</strong> равен на бонуса с превъртане х2. 
+При 20 лева бонус системата ще чака 20 лева
+вход, аут ще бъде възможен при достигане на 80 лева кредит.</p>
+<p>Превъртане с опция <strong>По Бет</strong>:</p>
+<p>Кредита ще бъде игнориран и системата ще позволи аут когато бета стане равен или по-голям от бонуса Х
+опцията за превъртане или кредита падне под <a href="config_system.html#smib_1">Погледни тук</a>.</p>
+<ul>
+<li>Предупреди за бонус</li>
+</ul>
+<p>Когато тотала на клиента достигне посочената сума, на дисплея ще се покаже надпис приканващ клиента да
+ изтегли хартиен бонус.</p>
+<h5 id="_15">Секция видове сандъци</h5>
+<ul>
+<li>
+<p>По IN</p>
+<p>Пресмятането на бонуса ще се извърши по тотала на клиента.</p>
+</li>
+<li>
+<p>По Bet</p>
+<p>Пресмятането на бонуса ще се извърши по Bet на съответната машина.</p>
+<p><strong>Не изчислява бета от всички машини на които клиента е изграл през деня</strong></p>
+</li>
+<li>
+<p>Директен</p>
+<p>Веднага след посавяне на картата на клиента ще се покаже бонус</p>
+</li>
+<li>
+<p>Допълнителни опции за настройка</p>
+<ul>
+<li>
+<p>Удържане</p>
+<p>Ако бонусът не е загубен ще се извърши <strong>Удържане</strong>
+Удържането може да бъде справочно или зачислено към касата на крупието <a href="config_system.html#_2">Погледни Тук</a></p>
+</li>
+<li>
+<p>Веднъж на ден</p>
+<p>Бонус ще излиза само веднъж на ден за един клиент. Няма сначение с колко карти играе клиента.</p>
+</li>
+<li>
+<p>Предходен тотал</p>
+<p>Активна при бонус тип <strong>По IN</strong> и <strong>Веднъж на ден</strong>.
+Бонус ще се покаже само в ситуация в която клиента е загубил съответната сума предходния ден.
+<strong>Изчислява се тотал на клиента от всички машини на които е играл предходен ден</strong></p>
+</li>
+<li>
+<p>Текущ месец</p>
+<p>Активна при бонус тип <strong>По IN</strong> и <strong>Веднъж на ден</strong>.
+Бонус ще се покаже само в ситуация в която клиента е загубил съответната сума текущ месец.
+<strong>Изчислява се тотал на клиента от всички машини на които е играл текущ месец</strong></p>
+</li>
+<li>
+<p>Изчакай вход</p>
+<p>След избиране на бонус сандък и приемане на бонуса системата ще изчака вход равен на сумата 
+на бонус.</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+<ul><li>Всички бонуси могат да бъдат приети или отказани.</li>
+<li>Отказаните бонуси остават активни до пускане на дневен отчет.</li>
+<li>Отказаните бонуси могат да бъдат играни по всяко време и на всяка машина.</li>
+<li>Системата приема кредита при премахване на карта като OUT</li>
+<li>Системата приема кредита при поставяне на карта като IN</li>
+<li>Внимавайте със стотинките в кредита. Може тотала да не достигне нужната сума.</li>
+<li>Допустима разлика от стотинки <a href="config_system.html#smib_1">Погледни тук</a></li>
+</ul></h4><br><br>
+<h4 style="color:blue">Информация!<br>
+Системата за бонуси може да работи <strong>С AFT</strong> и <strong>Без AFT</strong>
+<ul><li>С AFT бонусите ще влязат директно в машината</li>
+<li>Без AFT бонусът ще иска между едно и три завъртания</li></ul>
+</h4>
+<h4 style="color:red">Без AFT съобразете кредита в машината</h4></p>
+</blockquote>
+<h5 id="_16">Дни от седмицата</h5>
+<p>Бонусите ще бъдат активни само в избраните дни.</p>
+<p>При активиране в <strong>Сряда</strong> бонусите ще са активни от дневния отчет пуснат в Сряда до дневния 
+отчет пуснат в Четвъртък.</p>
+<p>За по специална настройка погледнете <a href="cust.html#_34">Пренасочване на група</a> </p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+В случай на използване на <strong>Пренасочване на група</strong> изберете опция <strong>Всички Дни</strong>
+</h4></p>
+</blockquote>
+<h5 id="_17">Секция Бонус купа</h5>
+<p>В основната си част представлява купа в която поставяте брой бинуси от определена сума.</p>
+<p>Колкото повече бонуси има от определена сума, толкова шанса да бъдат изтеглени се увеличава.</p>
+<p>Купата не свършва и при свяко теглене се вадят старите бонуси и се пълни отново.</p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Тегленето на бонуси е на случаен принцип.<br>
+Всичките сандъци съдържат случайно изтеглени 5 суми.<br>
+От там зависи от избора на клиента.<br></h4></p>
+</blockquote>
+<h2 id="_18">Добави/Редактирай клиент</h2>
+<p>Добавяне на клиент се извършва от бутона <strong>Нов Клиент</strong></p>
+<p>За редакция изберете нужния клиент и натиснете <strong>Редактирай Клиент</strong></p>
+<p>Ще се отвори следния прозорец:</p>
+<p><img alt="Нов клиент" src="../../img/colibri/cust_edit.png" /></p>
+<h3 id="_19">Добавяне на снимка на клиент</h3>
+<p>В разработка. Не активен бутон.</p>
+<h3 id="_20">Секция Група</h3>
+<p>Избирате група на клиент от падащото меню. </p>
+<p>Задължителен атрибут.</p>
+<p>В случай, че няма създадена група използвайте <a href="cust.html#_4">Добави Група</a></p>
+<h3 id="_21">Секция Карти</h3>
+<p><a href="config_system.html#_27">Изисква активен RFID четец</a></p>
+<p>Добавяне на карти на клиент.</p>
+<p>Няма ограничение в броя на картите.</p>
+<p>Картите не съдържат никаква информация за клиента или натрупаните от небо бонуси.</p>
+<ul>
+<li>
+<p>Бутон <img alt="Добави" src="../../img/colibri/list-add.png" /></p>
+<p>Добавя добавя карта на клиент.</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Поставете картата на четеца и натиснете <strong>Запис</strong>
+картата е добавена и всички машини ще разпознаят клиента.</p>
+</li>
+<li>
+<p>Бутон <img alt="Премахни" src="../../img/colibri/list-remove.png" /></p>
+<p>Премахване на определена карта от клиент.</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Поставете картата на четеца и натиснете <strong>Запис</strong>
+Картата ще бъде премахната и няма да е кативна на нито една машина.</p>
+</li>
+<li>
+<p>Бутон <img alt="Ресет" src="../../img/colibri/media-playlist-shuffle.png" /></p>
+<p>Премахва всички карти на клиент.
+Всички карти ще бъдат премахнати и няма да бъдат активни.</p>
+</li>
+</ul>
+<h3 id="_22">Лична информация</h3>
+<p>Задължително е <strong>Име на клиент</strong> и <strong>Населено място</strong></p>
+<p>Името трябва да е уникално. Разпознава малки и ГЛАВНИ букви.</p>
+<p><strong>Населено място</strong> се избира от падащото меню. </p>
+<p>В случай, че липсва използвайте бутона <strong>Добави</strong> и ще се отвори</p>
+<p><img alt="Град" src="../../img/colibri/sity.png" /></p>
+<p>Името на града трябва да бъде уникално. Разпознава малки и ГЛАВНИ букви.
+След запис <strong>Населеното място</strong> ще се появи в падащото меню.</p>
+<p>Всички останали атрубути могат да останат празни.</p>
+<blockquote>
+<p><h2 style="color:red">Внимание!<br>
+В случай, че решите да попълвате останалите атрубути <br>
+Спазвайте закона за лични данни на съотъветната страна.</h2></p>
+</blockquote>
+<h3 id="_23">Забрана</h3>
+<p>Ще деактивира клиента. Картите на клиента няма да бъдат разпознати от машините.
+Няма да позволи изплащане на <strong>Мъни Бек</strong> и отпечатване на <strong>Талони</strong></p>
+<h3 id="pin">PIN код</h3>
+<p>В разработка. Не се използва в тази ревизия.</p>
+<h3 id="_24">Персонални настройки</h3>
+<p>Указва, че клиента не зависи от групата и има индивидуални настройки.</p>
+<p>В случай на промяна на групата, настройките на този клиент няма да бъдат променени.</p>
+<p>За да настроите клиента индивидуално изберете тази опция. Логиката на всички настройки е като 
+настройките на <a href="cust.html#_4">Нова Групата</a> </p>
+<h2 id="_25">Изплати мънибек</h2>
+<p>Изплащане на <strong>Мъни бек</strong> <a href="config_system.html#_27">Изисква активен RFID четец</a></p>
+<p>Изисква картата на клиента да бъде маркирана от крупе на работния четец.</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Поставете картата в четеца. Ако сумата на <a href="cust.html#_4">натрупания Мъни Бек отговаря на минимално зададената</a></p>
+<p>Натрупания <strong>Мъни бек</strong> ще бъде занулен и ще бъде приспаднат от касата на крупието.</p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Изисква права за достъп
+Изплаща се само цяла сума. Стотинките остават в профила на клиента.</h4></p>
+</blockquote>
+<h2 id="_26">Изплати мънибек без карта</h2>
+<p>Избирате клиента от <a href="cust.html#_1">основния прозорец</a></p>
+<p>С десен бутон ще се отвори меню.</p>
+<p>Избирате <strong>Изплати МъниБек без карта</strong> </p>
+<p>Натрупания <strong>Мъни бек</strong> ще бъде занулен и ще бъде приспаднат от касата на крупието.</p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Изисква права за достъп
+Изплаща се само цяла сума. Стотинките остават в профила на клиента.</h4></p>
+</blockquote>
+<h2 id="_27">Премахни загуба на карта</h2>
+<p>При неправилна работа на rfid четеца се получава загуба на клиент.</p>
+<p>Всяка загуба се натрупва с обща статистика като вход и изход.</p>
+<p>Възможно е статистиката да получи неочакван тотал и да не отвори бонус.</p>
+<p>Бутона ще премахне нужната статистика.</p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Премахва целия Кредит IN и Кредир OUT<br>
+Първо проверете статистиката за загуба.<br>
+Използвайте в краен случай!</h4></p>
+</blockquote>
+<h2 id="_28">Печат на талони</h2>
+<p>Печат на <strong>Талони</strong> <a href="config_system.html#_27">Изисква активен RFID четец</a></p>
+<p>Изисква картата на клиента да бъде маркирана от крупе на работния четец.</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Поставете картата в четеца.</p>
+<p>Натрупаните <em>Талони</em> ще бъде занулен и ще бъде разпечатани на пос принтер.</p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Отпечатва се само цял талон. Останалата част остава в профила на клиента<br>
+Изисква настройки на POS принтер:<br>
+<a href="config_system.html#_27">Погледни</a></h4></p>
+</blockquote>
+<h2 id="_29">Печат на талони без карта</h2>
+<p>Печат на <strong>Талони</strong></p>
+<p>Поставете картата в четеца. </p>
+<p>Натрупаните <em>Талони</em> ще бъде занулен и ще бъде разпечатани на пос принтер.</p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Отпечатва се само цял талон. Останалата част остава в профила на клиента<br>
+Изисква настройки на POS принтер:<br>
+<a href="config_system.html#_27">Погледни</a></h4></p>
+</blockquote>
+<h2 id="_30">Свободни талони</h2>
+<p>В случай на машина без възможност за монтиране на SMIB контролер, талоните могат да бъдат отпечатани
+ свободно.</p>
+<p><img alt="FreeTalon" src="../../img/colibri/cust_free_talon.png" /></p>
+<p>Въвеждате брой талони и Име на клиент. Талоните ще бъдат разпечатани.</p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Изисква настройки на POS принтер:<br>
+<a href="config_system.html#_27">Погледни</a></h4></p>
+</blockquote>
+<h2 id="_31">Добави пари в карта</h2>
+<p>Това е каса на казиното. Изисква карта на клиент.</p>
+<p>Изисква AFT и на настройка на <a href="config_system.html#smib_1">SMIB секция keysystem</a></p>
+<p>Парите добавени в картата на клиента ще бъдат добавени в касата на крупието.</p>
+<p>Маркирайте картата на четеца</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Ще се зареди прозорец</p>
+<p><img alt="Добави пари" src="../../img/colibri/add_cust_mony.png" /></p>
+<p>След поставяне на карта в машина, машината ще направи IN за същата сума 
+Тази сума няма да се вземе под внимание при отчет.</p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Не работи с две карти. Първата машина ще вземе целия кредит.<br>
+В разработка.</h4></p>
+</blockquote>
+<h2 id="_32">Изплати пари от карта</h2>
+<p>Това е каса на казиното. Изисква карта на клиент.</p>
+<p>Изисква AFT и на настройка на <a href="config_system.html#smib_1">SMIB секция keysystem</a></p>
+<p>Парите изплатени от крупие ще се извадят от касата на крупието и ще бъдат занулени 
+в касата на клиента.</p>
+<p>Маркирайте картата на четеца</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Натиснете <strong>Запис</strong></p>
+<p>В случай, че клиента извади карта от машина.
+Машината ще направи OUT който няма да бъде взет под внимание при отчет.</p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Не работи с две карти.<br>
+В разработка.</h4></p>
+</blockquote>
+<h2 id="atm">Пари през ATM терминал</h2>
+<p>При наличие на пос терминал.</p>
+<p>Сумата постъпила през терминала и сложена в машината е разход за крупие.</p>
+<p>Избира се клиента и с дясно копче на мишката се избира <strong>ATM</strong></p>
+<p><img alt="Добави пари" src="../../img/colibri/add_cust_mony.png" /></p>
+<p>Избира се сумата на транзакцията.</p>
+<p>Сумата ще бъде извадена от касата на <strong>Крупие</strong> и не е нужно писането на разход.</p>
+<h2 id="_33">Бърза справка за клиент</h2>
+<p>Това е бърза справка. 
+Служи когато искаме бързо да проверим клиента и да го разпределим в група.</p>
+<p>Отваря се с <strong>Двоен клик на клиента</strong></p>
+<p><img alt="Бърза справка" src="../../img/colibri/cust_ststistic.png" /></p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Погледнете датата на справката.<br></h4></p>
+</blockquote>
+<h2 id="_34">Пренасочване на група</h2>
+<p>Може в определени дати и часове една група от клиенти да бъде пренасочена с натройките на друга.</p>
+<p><strong>Финни настройки</strong></p>
+<p>Отваря се с дясно копче на мишката <a href="cust.html#_3">върху филтър</a></p>
+<p>Ще зареди </p>
+<p><img alt="Правила за пренасочване" src="../../img/colibri/cust_group_redirect.png" /></p>
+<p>Правилата за пренасочване на група са с уникални имена.</p>
+<ul>
+<li>
+<p>Бутон <img alt="Добави" src="../../img/colibri/list-add.png" /></p>
+<p>Добавя ново правило за пренасочване.</p>
+</li>
+<li>
+<p>Бутон <img alt="Премахни" src="../../img/colibri/list-remove.png" /></p>
+<p>Изтрива правило за пренасочване.</p>
+</li>
+</ul>
+<p>Системата позволява всички клиенти от група <strong>Х</strong> да приемат настройките на група <strong>Y</strong> 
+в определен период от време.</p>
+<blockquote>
+<p><h4 style="color:red">Внимание!<br>
+Не работи за клиенти с индивидуални настройки.<br>
+<a href="cust.html#_18">Погледни ТУК</a>
+Пренасовчанията променящи бонусите на база тотал са с по-нисък приоритет и не се изпълняват
+ако има друго активно пренасочване</h4></p>
+<p><h3 style="color:red">Важно!<br>
+Дните на актувност на бонуса не се присвояват при пренасочване.<br>
+Или ако група <strong>X</strong> не работи в сряда то и пренасочването няма да работи.
+</h3></p>
+</blockquote>
+<p>При довавяне на пренасочване ще видите</p>
+<p><img alt="Добави Пренасочване" src="../../img/colibri/cust_redirect_row.png" /></p>
+<p>Името на пренасочването е свободно, но трабва да е уникално. Служи за разпознаване от потребителя.</p>
+<p>Бонусите ще се покажат в справките с името на отновната група на клиента, не с пренасочената.</p>
+<ul>
+<li>
+<p>От Група</p>
+<p>Това е групата която за смени настройките си</p>
+</li>
+<li>
+<p>Да стане</p>
+<p>Групата чиито натройки да приеме. Дори и група <strong>Y</strong> да няма никакви клиенти
+Всички клиенти на група <strong>X</strong> ще вземат нейните настроки в посочения интервал.<br>
+Интервала е <strong>ден от седмицата</strong> от <strong>час до час</strong></p>
+</li>
+<li>
+<p>При тотал до</p>
+<p>Ако опцията се активира променя сумата на бонусите ако тотала е на база предходен ден в зависимост
+от загубената сума. Не трябва да има пренасочвания с по-висок приоритет.</p>
+</li>
+</ul>
+<h2 id="_35">Резервация на машина за клиент</h2>
+<p>С десен бутон на мишката на името на желания клиент и избирате <strong>Резервация</strong></p>
+<p><img alt="Резервация" src="../../img/colibri/reserve.png" /></p>
+<p>Въведете до кога да бъде резервирана избраната машина и използвайте <strong>Запис</strong></p>
+<blockquote>
+<p><h4 style="color:blue">Внимание!<br>
+Избраната машина ще се заключи по SAS.<br>
+Машината ще се отключи след поставяне на карта принадлежаща на клиент или <br>
+След достигане на посоченото време.
+</h4></p>
+<p><h4 style="color:red">Важно!<br>
+При грешка използвайте авариент бутон <strong>Отключи SMIB</strong> или рестартирайте SMIB контролера.
+</h4></p>
+</blockquote></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

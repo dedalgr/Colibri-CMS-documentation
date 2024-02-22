@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Ревизия 220 - Colibri CMS</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../index.html">Colibri CMS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Jackpot <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/jpserver/index.html" class="dropdown-item">Български</a>
+</li>
+            
+<li>
+    <a href="../../../en/jpserver/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../jpserver/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CMS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/colibri/v2_1/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v2.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/colibri/v2_1/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SMIB <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.4</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/smib/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/smib/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../smib/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Visualization <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/visual/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/visual/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../visual/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#220" class="nav-link">Ревизия 220</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#221" class="nav-link">Ревизия 221</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#223" class="nav-link">Ревизия 223</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#227" class="nav-link">Ревизия 227</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#229" class="nav-link">Ревизия 229</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#230" class="nav-link">Ревизия 230</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#231" class="nav-link">Ревизия 231</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#237" class="nav-link">Ревизия 237</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#238" class="nav-link">Ревизия 238</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#239" class="nav-link">Ревизия 239</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#240" class="nav-link">Ревизия 240</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#241" class="nav-link">Ревизия 241</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#242" class="nav-link">Ревизия 242</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#243" class="nav-link">Ревизия 243</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#244" class="nav-link">Ревизия 244</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#245" class="nav-link">Ревизия 245</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#248" class="nav-link">Ревизия 248</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#249" class="nav-link">Ревизия 249</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#250" class="nav-link">Ревизия 250</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#251" class="nav-link">Ревизия 251</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#252" class="nav-link">Ревизия 252</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#253" class="nav-link">Ревизия 253</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#259" class="nav-link">Ревизия 259</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#262" class="nav-link">Ревизия 262</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#264" class="nav-link">Ревизия 264</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#271" class="nav-link">Ревизия 271</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#274" class="nav-link">Ревизия 274</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#275" class="nav-link">Ревизия 275</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#276" class="nav-link">Ревизия 276</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#277" class="nav-link">Ревизия 277</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#285" class="nav-link">Ревизия 285</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#286" class="nav-link">Ревизия 286</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#288" class="nav-link">Ревизия 288</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#294" class="nav-link">Ревизия 294</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#314" class="nav-link">Ревизия 314</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#317" class="nav-link">Ревизия 317</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#339" class="nav-link">Ревизия 339</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#343" class="nav-link">Ревизия 343</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#346" class="nav-link">Ревизия 346</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#351" class="nav-link">Ревизия 351</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#352" class="nav-link">Ревизия 352</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#364" class="nav-link">Ревизия 364</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#367" class="nav-link">Ревизия 367</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#368" class="nav-link">Ревизия 368</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#374" class="nav-link">Ревизия 374</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#375" class="nav-link">Ревизия 375</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#382" class="nav-link">Ревизия 382</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#385" class="nav-link">Ревизия 385</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#393" class="nav-link">Ревизия 393</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#402" class="nav-link">Ревизия 402</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="220">Ревизия 220</h1>
+<p>Дата: 21.10.2020</p>
+<ul>
+<li>Добавено време за реакция на реле</li>
+<li>Минимална стойност на сканиране на rfid от 100 на 1</li>
+<li>Поправен клас за регистрация на POS терминал от място</li>
+<li>Поправка на липси с отрицателен знак</li>
+<li>Поправен директен печат на windows</li>
+</ul>
+<h1 id="221">Ревизия 221</h1>
+<p>Дата: 22.10.2020</p>
+<ul>
+<li>Поправен бутон за тест на реле</li>
+<li>Поправка на размерите на цифровите полета</li>
+<li>Промяна на графика</li>
+</ul>
+<h1 id="223">Ревизия 223</h1>
+<p>Дата: 23.10.2020</p>
+<ul>
+<li>Поправка наблюдение в реално време</li>
+</ul>
+<h1 id="227">Ревизия 227</h1>
+<p>Дата: 26.10.2020</p>
+<ul>
+<li>
+<p>Отваря втори порт за комуникация</p>
+<p>SMIB контролерите се закачат на единия, а програмите на другия</p>
+</li>
+<li>
+<p>Поправено залепване на клиент с SMIB</p>
+</li>
+</ul>
+<h1 id="229">Ревизия 229</h1>
+<p>Дата: 31.10.2020</p>
+<ul>
+<li>Поправка в отваряне на липсващ четец</li>
+<li>Справки добавяне на графики</li>
+</ul>
+<h1 id="230">Ревизия 230</h1>
+<p>Дата: 01.11.2020</p>
+<ul>
+<li>Месечен отчет без проверка за отворени смени</li>
+<li>Поправка заключване на потребител при затваряне на програма</li>
+</ul>
+<h1 id="231">Ревизия 231</h1>
+<p>Дата: 04.11.2020</p>
+<ul>
+<li>Поправка отчет на машини</li>
+</ul>
+<h1 id="237">Ревизия 237</h1>
+<p>Дата: 05.11.2020</p>
+<ul>
+<li>Позволен хешаут при сума на дисплея</li>
+<li>Поправка в липси</li>
+<li>Поправка картинки</li>
+<li>Забрана да директна регистрация на POS Треминал</li>
+</ul>
+<h1 id="238">Ревизия 238</h1>
+<p>Дата: 12.11.2020</p>
+<ul>
+<li>Архивиране на база на Windows</li>
+<li>Възтановяване на база на Window</li>
+<li>Реиндексиране на база на Windows</li>
+</ul>
+<h1 id="239">Ревизия 239</h1>
+<p>Дата: 13.11.2020</p>
+<ul>
+<li>Локализация на Английски</li>
+<li>Поправка с четене на rfid </li>
+</ul>
+<h1 id="240">Ревизия 240</h1>
+<p>Дата: 16.11.2020</p>
+<ul>
+<li>Не отчислява мистери при липса на клиемтска карта</li>
+</ul>
+<h1 id="241">Ревизия 241</h1>
+<p>Дата: 20.11.2020</p>
+<ul>
+<li>Поправка загуба на RFID четец</li>
+<li>Поправка записване на грешки от сървър</li>
+<li>Сървъра не може да запише грешка с ниво под WARNING</li>
+</ul>
+<h1 id="242">Ревизия 242</h1>
+<p>Дата: 22.11.2020</p>
+<ul>
+<li>Лоцализация на програмата</li>
+<li>Локализация на шаблоните</li>
+</ul>
+<h1 id="243">Ревизия 243</h1>
+<p>Дата: 24.11.2020</p>
+<ul>
+<li>Удържане бонус на клиент, поправвено зачисляване на крупие</li>
+<li>Резервирай машина за клиент до дата и час</li>
+<li>Позволява спиране на процеси без последствия</li>
+<li>Поправя удържане на клиентски бонус на грешен потребител</li>
+</ul>
+<h1 id="244">Ревизия 244</h1>
+<p>Дата: 02.12.2020</p>
+<ul>
+<li>Права за достъп при зареждане на чужд потребителски профил</li>
+<li>Поправка не записан клиент към карта</li>
+<li>Локализация на SMIB</li>
+<li>Поправка локализация en</li>
+<li>Запис на промените по машини в джакпот сървъра</li>
+</ul>
+<h1 id="245">Ревизия 245</h1>
+<p>Дата: 03.12.2020</p>
+<ul>
+<li>Поправка на ниворо на логинг сървър</li>
+</ul>
+<h1 id="248">Ревизия 248</h1>
+<p>Дата: 27.12.2020</p>
+<ul>
+<li>Поправка на вакумиране, индексиране и възстановяване на база</li>
+</ul>
+<h1 id="249">Ревизия 249</h1>
+<p>Дата: 03.03.2021</p>
+<ul>
+<li>Преоразмеряване на фрейм в джакпот настройки</li>
+<li>Поправка в изтриване на таблици за логове</li>
+<li>Смяна на парола на приложение за gmail</li>
+</ul>
+<h1 id="250">Ревизия 250</h1>
+<p>Дата: 03.03.2021</p>
+<ul>
+<li>Поправка на връзка с gmail</li>
+</ul>
+<h1 id="251">Ревизия 251</h1>
+<p>Дата: 08.03.2021</p>
+<ul>
+<li>Редaкция дата на отчет</li>
+<li>Редакция номер на отчет</li>
+</ul>
+<h1 id="252">Ревизия 252</h1>
+<p>Дата: 09.03.2021</p>
+<ul>
+<li>Добавени нулирани машини в дневен отчет</li>
+</ul>
+<h1 id="253">Ревизия 253</h1>
+<p>Дата: 16.03.2021</p>
+<ul>
+<li>Поправка при отчет</li>
+</ul>
+<h1 id="259">Ревизия 259</h1>
+<p>Дата: 25.04.2021</p>
+<ul>
+<li>Добавено засичане на тотал за клиентски бонус на база предходен ден</li>
+<li>Добавено засичане на тотал за клиентски бонус на база месец</li>
+<li>Добавено пренасочване към клиентска група на база тотал</li>
+<li>Промяна в криптирането. Става с плаващ ключ</li>
+<li>Промяна на протокола на комуникация от UDP на TCP</li>
+<li>Нов шаблон на дневни и месечни отчети пригоден за НАП</li>
+<li>Добавяне на трансферите в касовия ордер</li>
+<li>Промяна на начина за отваряне на порт към базата</li>
+<li>Добавена възможност за бан на пос терминал (в разработка)</li>
+<li>Промяна в моделите на базата</li>
+<li>Поправен рестарт на визуализация</li>
+<li>Добавено изгасяне на висуализация</li>
+</ul>
+<h1 id="262">Ревизия 262</h1>
+<p>Дата: 28.04.2021</p>
+<ul>
+<li>Стартиране с windows 10 с последни ъпдейти</li>
+</ul>
+<h1 id="264">Ревизия 264</h1>
+<p>Дата: 29.04.2021</p>
+<ul>
+<li>Поправено отваряне на PDF на WINDOWS</li>
+</ul>
+<h1 id="271">Ревизия 271</h1>
+<p>Дата: 08.05.2021</p>
+<ul>
+<li>Поправка в криптирането</li>
+</ul>
+<h1 id="274">Ревизия 274</h1>
+<p>Дата: 09.05.2021</p>
+<ul>
+<li>Добавено превъртане на бонус по бет или кредит</li>
+</ul>
+<h1 id="275">Ревизия 275</h1>
+<p>Дата: 12.05.2021</p>
+<ul>
+<li>Зинхронизация на часова зона</li>
+</ul>
+<h1 id="276">Ревизия 276</h1>
+<p>Дата: 13.05.2021</p>
+<ul>
+<li>Добавяне на редове за ремонт</li>
+</ul>
+<h1 id="277">Ревизия 277</h1>
+<p>Дата: 14.05.2021</p>
+<ul>
+<li>Поправена часова зона при старт</li>
+</ul>
+<h1 id="285">Ревизия 285</h1>
+<p>Дата: 23.05.2021</p>
+<ul>
+<li>Премахнато напомняне за печат на РКО при край на смяна</li>
+<li>Довавена опция в настройки SMIB N0x (не използвай 0x числа)</li>
+<li>Поправка в трансфери.</li>
+<li>Поправка в commit</li>
+<li>Поправен ресет на играч</li>
+</ul>
+<h1 id="286">Ревизия 286</h1>
+<p>Дата: 24.05.2021</p>
+<ul>
+<li>Поправка грешна сума на трансфер</li>
+<li>Поправка в редакция на приходи, разходи и броячи</li>
+</ul>
+<h1 id="288">Ревизия 288</h1>
+<p>Дата: 31.05.2021</p>
+<ul>
+<li>Поправка в таблица липси</li>
+<li>Пращане на маил от списък разделен със ','</li>
+</ul>
+<h1 id="294">Ревизия 294</h1>
+<p>Дата: 07.06.2021</p>
+<ul>
+<li>Добавен максимален мъникек</li>
+<li>Справка натрупан мънибек</li>
+<li>Поправка в изпращане на маил при дневен отчет</li>
+<li>Преоразмеряване на справките по текст на поле</li>
+<li>Не усвояем клиентски бонуси </li>
+<li>Поправка в Предходен Тотал. Взима последния когато клиента е идвал.</li>
+</ul>
+<h1 id="314">Ревизия 314</h1>
+<p>Дата: 23.06.2021</p>
+<ul>
+<li>Преместен Заключване на бил от конфиг файл към база. Определя се от група на потребител</li>
+<li>Преместен авто маил от конфиг към база. Определя се от група на потребител</li>
+<li>Преместен маил за собственик и сервиз. Определя се от група на потребител</li>
+<li>Преместен маил subject. Определя се от група на потребител</li>
+<li>Преместен Извади целия билл. Определя се от група на потребител</li>
+<li>Добавена кодова таблица CP-1250 и CP-1252</li>
+<li>Изцяло програмата работи с часовата зона на сървъра.</li>
+<li>Променено пренасочване на групи с промяна в нивото на клиента на база тотал от последно идване.</li>
+<li>Добавен не усвояем вход в клиентски бонус</li>
+<li>Добавен не усвояем вход в бонус карти</li>
+<li>Поправка в конфигурационен фай (приема стойности на всички кодови таблици)</li>
+<li>Възможност за падане на директен бонус без изчакване на вход</li>
+<li>Поправена документация</li>
+<li>Интегриран разходен касов ордер към кешлес</li>
+<li>Интегрирам разходен касов ордер към клиентски модул</li>
+<li>Възможност за печат на разходен касов ордер при дневен отчет (пти тотал над 1783 дели на различни ордери)</li>
+<li>Поправена справка РКО на крупие</li>
+<li>Добавено поле ЕИК към фирма организатор</li>
+<li>Увеличени опити за отключване на сървър при грешка в интернет от 3 на 5</li>
+<li>Поправка в минимална ревизия</li>
+<li>Поправка в директен печат на windows</li>
+<li>Поправка месечен отчет по дата</li>
+<li>Поправка в удържани бонуси</li>
+<li>Печат на сървър през POS принтер</li>
+<li>Показва времето с преизчислена часова зона при вход</li>
+<li>Поправен цвят на текст</li>
+<li>Свободен печат на ордер</li>
+<li>TCP протокол</li>
+<li>Прихващане на грешка при въведени букви в редакция на приходи/разходи</li>
+</ul>
+<h1 id="317">Ревизия 317</h1>
+<p>Дата: 29.06.2021</p>
+<ul>
+<li>Поправка в съобщение за принудителен отчет на машина</li>
+<li>Добавени рекламни клипове в SMIB на тъча за клиенти</li>
+<li>Възможност за тайаут 0 на rfid четец на SMIB</li>
+<li>Редакция в пренасочване на група на клиент спрямо тотал от предходно посещение. 
+Запазва базов бонус при печалба</li>
+</ul>
+<h1 id="339">Ревизия 339</h1>
+<p>Дата: 05.08.2021</p>
+<ul>
+<li>Поправка на зачисляване на липси</li>
+<li>Поправка на съобщения</li>
+<li>Поправка на точка за уведомяване</li>
+<li>Намаляване на таймаут до 0</li>
+<li>Проверка дали джакпот сървъра е блокиран</li>
+<li>Поправка време на последна редакция с часова зона в приходи и разходи</li>
+<li>Поправка в затварянето при прекъсната връзка.</li>
+<li>Всяка грешка в базата връща всички текущи промени по подразбиране</li>
+<li>Поправка вадене на бил в дневна смяна</li>
+<li>Поправка локализация</li>
+<li>Поправка справка SMIB лог</li>
+</ul>
+<h1 id="343">Ревизия 343</h1>
+<p>Дата: 16.08.2021</p>
+<ul>
+<li>При редакция завежда изваден бил</li>
+<li>Добавено право за редакция на ръчно отчетени машини</li>
+<li>Справка разходен касов ордер</li>
+<li>Печат на копие на разходен касов ордер</li>
+<li>Попражено удържане на бонуси</li>
+<li>Поправка в липси</li>
+<li>Сортиране на бонуси по дата</li>
+</ul>
+<h1 id="346">Ревизия 346</h1>
+<p>Дата: 05.09.2021</p>
+<ul>
+<li>Клиентски бонус на база процент от тотал</li>
+</ul>
+<h1 id="351">Ревизия 351</h1>
+<p>Дата: 08.09.2021</p>
+<ul>
+<li>Изтриване на празни клиентски групи</li>
+<li>Поправен бекъп и рестор на базата на windows</li>
+</ul>
+<h1 id="352">Ревизия 352</h1>
+<p>Дата: 21.09.2021</p>
+<ul>
+<li>Ускорено четена на карти при добавяне към клиент</li>
+<li>Добавен син скин на SMIB</li>
+</ul>
+<h1 id="364">Ревизия 364</h1>
+<p>Дата: 13.10.2021</p>
+<ul>
+<li>Добавена миграция на база данни</li>
+<li>Показване на пренасочени бонуси</li>
+<li>Закръгляне на приходи и разходи</li>
+<li>Поправен автоъпдейт при минимална ревизия на windows</li>
+<li>Премахната справка на SMIB лог</li>
+<li>В сервиз добавен WEB мониторинг на SMIB</li>
+</ul>
+<h1 id="367">Ревизия 367</h1>
+<p>Дата: 22.11.2021</p>
+<ul>
+<li>Добавено копие клиентска карта без да се виждат настройки на клиент</li>
+</ul>
+<h1 id="368">Ревизия 368</h1>
+<p>Дата: 23.11.2021</p>
+<ul>
+<li>Дубликат на група</li>
+</ul>
+<h1 id="374">Ревизия 374</h1>
+<p>Дата: 13.01.2022</p>
+<ul>
+<li>Записва всички входове и изходи в базата</li>
+<li>В справка за вход изход с кешлес записва име на крупие </li>
+<li>Поправяне на закръгляне до 0,01 ст. в кешлес.</li>
+<li>Поправка в бонус картите на импера, ако не е избрана игра не отменя транзакция.</li>
+<li>Показва име на крупие на дневен и месечен отчет</li>
+<li>Налични пари преди отчет</li>
+<li>Поправка в редакция на потребител. Генерира грешка ако има повторение на данни.</li>
+</ul>
+<h1 id="375">Ревизия 375</h1>
+<p>Дата: 15.01.2022</p>
+<ul>
+<li>Поправя изхвърляне при вход веднъж</li>
+<li>Поправя потребители в джакпот сървъра</li>
+</ul>
+<h1 id="382">Ревизия 382</h1>
+<p>Дата: 08.02.2022</p>
+<ul>
+<li>Спиране напищялките на бил аксепторите при отчети пускането им при край на смяна</li>
+<li>Поправка в ордера на крупиетата относно приходи от трансфер</li>
+<li>Поправка на AFT на машини на казино с ARM, добавена опция винаги да подава еднаква транзакция</li>
+<li>Премахване на маил през локален хост</li>
+<li>Gmail е в цикъл 3 от по 10 минути</li>
+<li>Поправя комуникацията със старт Amatic с Windows</li>
+<li>Поправя принудително ръчно отчитане при промяна на номер на машина в зала</li>
+<li>Поправя създаване и премахване на потребители в джакпот сървъра</li>
+<li>Поправя връюане на клиентскибонус ако не е удвоен</li>
+<li>Поправя надпис за кога е възможно връщане</li>
+<li>При връщане по бет показва % вместо сума до достигане на нужния бет</li>
+<li>DEBUG активира функции за тест</li>
+<li>Добавена валидация на ЕГН</li>
+</ul>
+<h1 id="385">Ревизия 385</h1>
+<p>Дата: 25.02.2022</p>
+<ul>
+<li>Джакпот по AFT</li>
+<li>Опис на пари</li>
+</ul>
+<h1 id="393">Ревизия 393</h1>
+<p>Дата: 28.02.2022</p>
+<ul>
+<li>Автоматична конфигурация на SAS </li>
+</ul>
+<h1 id="402">Ревизия 402</h1>
+<p>Дата: 09.03.2022</p>
+<ul>
+<li>От commit към flush</li>
+<li>Крупиета могат да създават клиенти</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

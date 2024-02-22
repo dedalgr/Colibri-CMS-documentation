@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Вход в Джакпот Сървър - Colibri CMS</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../index.html">Colibri CMS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Jackpot <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/jpserver/index.html" class="dropdown-item">Български</a>
+</li>
+            
+<li>
+    <a href="../../../en/jpserver/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../jpserver/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CMS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/colibri/v2_1/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v2.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/colibri/v2_1/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SMIB <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.4</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/smib/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/smib/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../smib/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Visualization <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/visual/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/visual/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../visual/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Вход в Джакпот Сървър</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_2" class="nav-link">Основен прозорец</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">Машини</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_11" class="nav-link">Визуализации</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_17" class="nav-link">Групи</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_31" class="nav-link">Събития</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_32" class="nav-link">Сървър</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_35" class="nav-link">Потребители</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_39" class="nav-link">Опресни</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_40" class="nav-link">Запиши</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_41" class="nav-link">Задръж</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_42" class="nav-link">Пусни</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_43" class="nav-link">Архивирай</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_44" class="nav-link">Зареди</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_45" class="nav-link">Помощ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_46" class="nav-link">Изход</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">Вход в Джакпот Сървър</h1>
+<p>Изисква стабилна интернет връзка</p>
+<p>С цел защита, цялата комуникация минава пред <a href="config_system.html#_15">Редирект Сървър</a></p>
+<p><img alt="Вход" src="../../img/colibri/jp_login.png" /></p>
+<p>Потребител: <strong>root</strong></p>
+<p>Парола: <strong>123456</strong></p>
+<h5 style="color:red">Важно!<br>
+След вход, създайте свой потребител и премахнете __root__<br>
+Потребителя за вход в Джакпот Сървъра не зависи от потребителя на Системата за отчет</h5>
+
+<h1 id="_2">Основен прозорец</h1>
+<p>Основен прозорец на програмата за настройки.</p>
+<p><img alt="Основен Прозорец" src="../../img/colibri/jp_main.png" /></p>
+<h2 id="_3">Машини</h2>
+<p>Въвеждане на нова машина в Джакпот Сървъра</p>
+<p>За добавяне или промяна на машините от <a href="device.html#_6">Системата за отчет в сървъра</a></p>
+<p><img alt="Добавяне на машина" src="../../img/colibri/jp_device.png" /></p>
+<h5 style="color:red">Промените няма да влязат в сила докато не бъдат записани в сървъра</h5>
+
+<h3 id="_4">Двоен клик на машина</h3>
+<p>Дава информация за машината и проверява наличие на връзка с <strong>Джакпот Сървър</strong></p>
+<h3 id="_5">Добави</h3>
+<p>За донавяне на нова машина към <strong>Джакпот Сървър</strong></p>
+<p>Погледнете IP адреса на SMIB контролера и на кой номер машина в зала отговаря в
+<a href="main.html">Начален Екран</a>, ще се наложи да го въведете.</p>
+<p><img alt="Нова машина" src="../../img/colibri/jp_add_device.png" /></p>
+<p>Въведете нужната информация.</p>
+<p>Не използвайте опцията <strong>механични броячи</strong> ще бъде премахната в бъдещи версии.</p>
+<p>Използвайте бутона <strong>Запис</strong></p>
+<h3 id="_6">Редактирай</h3>
+<p>Редактиране на съществуваща машина</p>
+<p>Изберете машина която искате да редактирате и използвайте бутона <strong>Редактирай</strong></p>
+<p><img alt="Нова машина" src="../../img/colibri/jp_add_device.png" /></p>
+<p>Променете нужната информация.</p>
+<p>Не използвайте опцията <strong>механични броячи</strong> ще бъде премахната в бъдещи версии.</p>
+<p>Използвайте бутона <strong>Запис</strong>)</p>
+<h3 id="_7">Изтрий</h3>
+<p>Премахва машина от <strong>Джакпот Сървър</strong></p>
+<p>Изберете машина и натиснете бутона <strong>Изтрий</strong></p>
+<h3 id="_8">Помощ</h3>
+<p>Отваря текуща документация</p>
+<h3 id="_9">Процент</h3>
+<p>Намалява отчисленията на SMIB контролера към всички групи</p>
+<p>При стойност 0,8 и игра на 1 лев (100 кредита) сървъра ще направи отчисление на 80 кредита.</p>
+<h3 id="_10">Изключи игра</h3>
+<p>Избраната игра няма до отчислява на <strong>Джакпот Сървър</strong></p>
+<p>Пример: Ролетка</p>
+<h2 id="_11">Визуализации</h2>
+<p>Настройки на визуализации</p>
+<p><img alt="Висуализации" src="../../img/colibri/jp_visual.png" /></p>
+<p>Визуализациите могат да участват само в една група мистерии</p>
+<p>Свободните визуалиции не се използват и могат да бъдат добавени в нова група.</p>
+<p>Моля освободете визуализация преди да я добавите в друга <a href="jackpot.html#_12">група</a></p>
+<h3 id="_12">Добави</h3>
+<p>Нова и свободна визуализация. Тя може да бъде използвана за нова група
+или добавена в съществуваща.</p>
+<p>Възможно е да се наложи рестарт на новата визуализация при инициализиране.</p>
+<h3 id="_13">Изтрий</h3>
+<p>Премахва избраната визуализация.</p>
+<p>Уверете се, че групата няма да остане без визуализации.</p>
+<h3 id="_14">Аудио Тест</h3>
+<p>Изпраща сигнал за тест на звук към избраната визуализация.</p>
+<h3 id="_15">Помощ</h3>
+<p>Отваря текуща документация</p>
+<h3 id="_16">Рестар</h3>
+<p>Рестартира избраната визуализация</p>
+<p>В разработка.</p>
+<p>Възможно е да не работи</p>
+<h2 id="_17">Групи</h2>
+<p>Настройки на групи от мистерии. <strong>Джакпот Сървър</strong> няма ограничение в броя на групите.</p>
+<p>Групи тип <strong>класическа игра</strong> могат да съдържат до 5 нива.</p>
+<p>Групи тип <strong>времева игра</strong> могат да съдържат до 2 нива</p>
+<p>Групи тип <strong>бомби</strong> нямат ограничение в броя на нивата, но нямат и собственна визуализация.
+Просто изпращат сигнал за падане към визуализация заета от друга група.</p>
+<p><img alt="Групи" src="../../img/colibri/jp_group.png" /></p>
+<h3 id="_18">Добавяне на нова група</h3>
+<p>Използвайте бутона добави. Имената са свободни, но трябва да бъдат уникални.</p>
+<p>Веведете име за разпознаване и изберете тип на игра. </p>
+<p><img alt="Добави Група" src="../../img/colibri/jp_group_add.png" /></p>
+<p>Използвайте бутона <strong>Запис</strong></p>
+<p>Новата група ще се появи в основния прозорец.</p>
+<h3 id="_19">Визуализация в група</h3>
+<p>За добавяне на нова визуализация в групата използвйте <strong>десен бутон</strong> върху името на групата.</p>
+<p><img alt="Добави визуализация в група" src="../../img/colibri/jp_add_device_to_group.png" /></p>
+<p>Бутон <img alt="Добави" src="../../img/colibri/list-add.png" /> добавя визуализация в група</p>
+<p>Бутон <img alt="Премахни" src="../../img/colibri/list-remove.png" /> премахва визуализация от група</p>
+<h3 id="_20">Добави машина в група</h3>
+<p>За добавяне на машина в групата използвйте <strong>десен бутон</strong> върху името на групата.</p>
+<p><img alt="Добави машина в група" src="../../img/colibri/jp_add_device_to_group.png" /></p>
+<p>Бутон <img alt="Добави" src="../../img/colibri/list-add.png" /> добавя визуализация в група</p>
+<p>Бутон <img alt="Премахни" src="../../img/colibri/list-remove.png" /> премахва визуализация от група</p>
+<h3 id="_21">Централни настройки на група</h3>
+<p>Това е настройка която се използва в случай, че не е добавена индивидуална настройка на <strong>ниво</strong></p>
+<p><img alt="Настройка на група" src="../../img/colibri/jp_group_config.png" /></p>
+<h4 id="_22">Задържане в %</h4>
+<p>При 40% мистерията ще задържи 40 % от разликата между <strong>Начална</strong> и <strong>Крайна</strong> стойност 
+ако не е указано друго в самото ниво.</p>
+<h4 id="_23">Активна</h4>
+<p>Ден и Час в който групата от мистерии да е активна. В останалото време е заключена и не върти.</p>
+<h4 id="_24">Прогресивно забавяне</h4>
+<p>Колкото повече се качва мистерията, толкова по-бавно отчислява.</p>
+<h4 id="_25">Отчисление по минимален бет</h4>
+<p>При зададен <strong>Минимален BET</strong> за падане, мистерията няма да отчислява ако играта е слаба 
+от минималния BET </p>
+<h3 id="_26">Добави ниво</h3>
+<p>Използвайте <strong>десен бутон</strong> върху името на групата</p>
+<p>В зависимост от избрания тип игра се делят на три типа</p>
+<h4 id="_27">Класическа игра</h4>
+<p><img alt="Класическа игра" src="../../img/colibri/jp_clasic_group.png" /></p>
+<h5 style="color:red">Внимание!<br>
+В състезание, при неактивност на играч за над 3 минути<br>
+Сървъра ще премахне играча от участниците и ще занули целия натрупан от него bet</h5>
+
+<ul>
+<li>
+<p>Въведете уникално име за разпознаване</p>
+</li>
+<li>
+<p>База е сумата от която ще започне мистерията при инициализация</p>
+<p>След падане към базата ще добави стойноста на натрупания hiden </p>
+<p>При инициализация да зайате начална стойнос по желание в противен случай мистерията ще 
+стартира със сума <strong>0</strong></p>
+<p>Ако не искате да имате Начална стойност, след запис в сървъра отворете в режим редактиране и 
+направете базовата сума <strong>0</strong></p>
+</li>
+<li>
+<p>Задържане в % е задържането на определен % преди падане</p>
+<p>Ако въведете стойност 40 при мистерия от с граници 100-200 то мистерията ще падне след 140 лева.<br>
+Оставете 0 за деактивиране на опцията<br>
+Ако процент на задържане е настроен в настройки на група, а тази опция е деактивирана ще
+бъде използвана настройката на група.<br>
+Тази опция е с по-голям приоритет, в случай на активиране настройката на група ще бъде игнорирана.</p>
+</li>
+<li>
+<p>От сума</p>
+<p>Сумата при която мистерията ще влезе в активен за падане режим</p>
+</li>
+<li>
+<p>До сума</p>
+<p>Сумата която мистерията да не надвишава</p>
+</li>
+<li>
+<p>Отчисление в %</p>
+<p>1 осначава 1% на 100 кредита = 1 кредит<br>
+при коефициент 0,01 един кредит = 0,01 стотинка<br>
+Погледнете настроения коефициент на машината.<br>
+<h5 style="color:red">Внимание!<br>
+При машини с коефицен различен от 0,01 мистерията няма да падне в кредита,<br>
+поради невърможност да бъде изплатена цялата сума.<br>
+Изплатете сумата на ръка!</h5></p>
+</li>
+<li>
+<p>Скрит %</p>
+<p>Процент за отчисление на скрита <strong>hiden</strong> стойност<br>
+1 осначава 1% на 100 кредита = 1 кредит<br>
+при коефициент 0,01 един кредит = 0,01 стотинка<br>
+Погледнете настроения коефициент на машината.</p>
+</li>
+<li>
+<p>Класическа мистерия</p>
+<p>След достигане на случайна сума, мистерията ще падне в кредита на машината</p>
+</li>
+<li>
+<p>Състезателна мистерия</p>
+<p>След достигане на случайна сума, мистерията ще влезе в състезателен режим.<br>
+Ще обяви стойност за падне.<br>
+Всички състезатели започват от <strong>0</strong><br>
+Състезателите с най-много натрупан <strong>bet</strong> ще се покажат на таблото<br>
+След достигане на предварително обявената сума, сървъра ще вземе решение кой е печелившия играч.<br></p>
+<p><h5 style="color:red">Внимание!<br>
+Само играчи покачани на таблото имат шанс за печалба<br>
+Не е задължително натрупалия най-голям bet да е печеливш.<br>
+Натрупания бет само увеличава шанса.</h5></p>
+<p>```
+  Общ Bet = 100
+  Общо играчи = 3
+  Играч 1 бет = 50
+  Играч 2 бет = 30
+  Играч 3 бет = 20</p>
+<p>Играч едно има 50% шанс за печалба.
+   ```</p>
+</li>
+<li>
+<p>Рейндж в състезание</p>
+<p>Две суми между които ще се избере сума която ще се довави към сумата на мистерията
+при влизане в състезание.</p>
+<p><h5 style="color:red">Внимание!<br>
+Възможно е мистерията да превизи сумата зададена в полето <strong>До сума</strong></h5></p>
+<p><code>Сума до = 100
+    Мистерията влиза в режим състезание = 90
+    Добавя случайна стойност между рейндж в състезания: От 10 До 50
+    Избира случайна стонност 20
+    Обявява падане на 110 лева</code> 
+* Брой играчи в състезание</p>
+<p>От 2 до 5 играча на таблото</p>
+</li>
+<li>
+<p>X2 </p>
+<p>В определен интервал от време сумата на мистерията ще се умножи по 2<br>
+<h5 style="color:red">Внимание!<br>
+При стоиност на мистерия 100 и активна опция от 19 до 20 часа:<br>
+Ако мистерията падне в часовия интервал то нейната стойност ще бъде 100*2</h5></p>
+</li>
+<li>
+<p>Минимален бет</p>
+<p>Не се използва в състезание. Това е минималната сума на която трябва да върти играч, 
+за спечелване на мистерия.</p>
+</li>
+<li>
+<p>Задължителна карта</p>
+<p>Изисква картов момул.</p>
+<p>При липса на клиентска карта мистерията не отчислява.</p>
+</li>
+</ul>
+<h4 id="_28">Времева игра</h4>
+<p>Това е игра падаща по време и няма горна граница на натрупаната сума.</p>
+<p>Максимален брой нива 2.</p>
+<h5 style="color:red">Внимание!<br>
+Мистериите от времеви тип могат да паднат замо веднъж в посочения интервал от време</h5>
+
+<p><img alt="Времева игра" src="../../img/colibri/jp_time_group.png" /></p>
+<ul>
+<li>
+<p>Име</p>
+<p>Името трябва да бъде уникално</p>
+</li>
+<li>
+<p>Период</p>
+<ul>
+<li>
+<p>Дневна </p>
+<p>Мистерията ще се активира всеки ден в посочения интервал от време</p>
+</li>
+<li>
+<p>Седмична</p>
+<p>Изберете дните в които желаете мистерията да се активира</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Стойност</p>
+<p>Това е стойност от която мистерията ще започва винаги след падане.</p>
+</li>
+<li>
+<p>От Час</p>
+<p>Час в който мистерията да влезе в режим <strong>Активна</strong></p>
+</li>
+<li>
+<p>До Час</p>
+<p>Час в който мистерията да влезе в режим <strong>Неактивна</strong></p>
+</li>
+<li>
+<p>Фиксирана стойност</p>
+<p>Мистерията не се трупа. Пада обявената стойност.</p>
+</li>
+<li>
+<p>С натрупване</p>
+<p>Мистерията се трупа с процента за отчисление</p>
+<p><h5 style="color:red">Внимание!<br>
+Ако мистерията не падне в посочения интервал, нейната стойност няма да бъде занулена.<br>
+Ще бъде прехвърлена в следвашия интервал от време</h5></p>
+<p><code>Ден едно начална стойност = 50 лева
+    В края на ден 1 натрупано = 10 лева
+    Ден 2 начална стойност = 60 лева
+    Край на ден 2 натрупано = 50 лева
+    Ден 3 начална стойност = 110 лева
+    Падане и край на ден 3
+    Ден 4 начална стойност = 50 лева</code></p>
+</li>
+<li>
+<p>Минимален бет</p>
+<p>Бет над който трябва да играе играч за спечелване на мистерията.</p>
+</li>
+</ul>
+<h4 id="_29">Бомби</h4>
+<p>Разликата с  <strong>Времева игра</strong> е: </p>
+<ul>
+<li>
+<p>липсата на ограничение в броя на нивата</p>
+</li>
+<li>
+<p>Не изисква собствена визуализация</p>
+</li>
+<li>
+<p>Часовите интервалите могат да съдържат и минути</p>
+<p>18.15 = 6 часа и 15 минути.</p>
+</li>
+</ul>
+<h3 id="_30">Помощ</h3>
+<p>Отваря текущата документация</p>
+<h2 id="_31">Събития</h2>
+<p>Справки за паднали мистерии</p>
+<p><img alt="Справки" src="../../img/colibri/jp_down_log.png" /></p>
+<p>Погледни <a href="report.html">Справки</a></p>
+<h2 id="_32">Сървър</h2>
+<p>Информация за сървъра и активиране на наемен сървър</p>
+<p><img alt="Сървър" src="../../img/colibri/jp_config.png" /></p>
+<h3 id="_33">Активирай</h3>
+<p>Удължава дата на работа на наемен сървър.</p>
+<p>Свържете се с <a href="mailto:grigor.kolev@gmail.com"> Grigor Kolev </a></p>
+<h3 id="crc">CRC</h3>
+<p>Изчислява и проверява дали CRC на сървъра отговаря на версията регистрирана в <strong>ДКХ</strong></p>
+<p>Всяка не регламентирана промяна ще предизвика блокиране на <strong>Джакпот Сървъра</strong></p>
+<h3 id="_34">Помощ</h3>
+<p>Отваря текущата документация</p>
+<h2 id="_35">Потребители</h2>
+<p>Управление на потребители на <strong>Джакпот Сървъра</strong>.</p>
+<p>Потребителите на <strong>Джакпот Сървъра</strong> не зависят от <a href="user.html">потребителите на системата</a></p>
+<p><img alt="Потребители" src="../../img/colibri/jp_user.png" /></p>
+<h3 id="_36">Добави</h3>
+<p>Добавя нов потребител</p>
+<h3 id="_37">Премахни</h3>
+<p>Изберете потребител за премахване и използвакте бутона <strong>Изтрий</strong></p>
+<h5 style="color:red">Внимание!<br>
+Премахване на всички потребители или забравена парола<br>
+няма да попречат на работата на сървъра.<br>
+Но достъп за настройки ще бъде отнет без възможност за възтановяване.</h5>
+
+<h3 id="_38">Помощ</h3>
+<p>Отваря текущата документация</p>
+<h2 id="_39">Опресни</h2>
+<p>Изтегля нужната информация от сървъра за промяна в настройките</p>
+<h5 style="color:red">Внимание!<br>
+Ако не сте сигурни в настройките които сте направили<br>
+Ореснете повторно. Това ще премахне всички промени.</h5>
+
+<h4 style="color:red">Внимание!<br>
+Уверете се, че имате стабилна интернет връзка със сървъра.<br>
+При грешен запис на информация, опитайте повторно записване<br>
+</h4>
+
+<h4 style="color:blue">Внимание!<br>
+Информацията се предава чрез технология __Ключ, Стойност__<br>
+Всеки ключ трябва да бъде запасен в и цял или няма да бъде записан.<br>
+При прекъсване в комуникацията е възможно една промяна да се запише, друга не.<br>
+Препоръчваме промени на сървъра от __локална мрежа__
+</h4>
+
+<h2 id="_40">Запиши</h2>
+<p>Записва всички промени в сървъра.</p>
+<h5 style="color:red">Внимание!<br>
+Не правете промени в сървъра при интензивна игра</h5>
+
+<h2 id="_41">Задръж</h2>
+<p>Спира въртенето на сърчъра.</p>
+<p>Всички мистерии ще спрат отчислението</p>
+<h2 id="_42">Пусни</h2>
+<p>Пуска въртенето на сървъра.</p>
+<p>Всички мистерии ще започнат да отчисляват.</p>
+<h2 id="_43">Архивирай</h2>
+<p>Създава архив на информацията от <strong>Джакпот Сървъра</strong></p>
+<p>Моля използвайте тази опция, тя не е поставена случайно.</p>
+<p>Може да направите архиви в за много казина, но само последния за едно казино ще е активен.</p>
+<h2 id="_44">Зареди</h2>
+<p>Зарежда информация от създаден архив.</p>
+<h2 id="_45">Помощ</h2>
+<p>Отваря текущата документация</p>
+<h2 id="_46">Изход</h2>
+<p>Изход от програмата и връчане в <a href="jackpot.html#_1">прозорец за вход</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Начален прозорец - Colibri CMS</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../index.html">Colibri CMS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Jackpot <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../jpserver/index.html" class="dropdown-item">Български</a>
+</li>
+            
+<li>
+    <a href="../../../en/jpserver/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/jpserver/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CMS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/colibri/v2_1/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/colibri/v2_1/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v2.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/colibri/v2_1/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/colibri/v2_1/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SMIB <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.4</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../smib/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/smib/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/smib/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Visualization <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../visual/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../../en/visual/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/visual/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Начален прозорец</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_2" class="nav-link">Модули</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">Отчети</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">Клиенти</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">М.Броячи</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">Регион</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_7" class="nav-link">Печат на отчети</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_8" class="nav-link">Начало на смяна</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_9" class="nav-link">Справки</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_10" class="nav-link">Настройки</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_11" class="nav-link">Сервиз</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_12" class="nav-link">Изход</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_13" class="nav-link">Бързи действия</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#smib" class="nav-link">Проверка SMIB</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_14" class="nav-link">Намерих грешка с софтуера</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_15" class="nav-link">Съобщения</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_16" class="nav-link">Бонус Карти</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_17" class="nav-link">Извади Бил</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_18" class="nav-link">Пусни бил</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_19" class="nav-link">Спри бил</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_20" class="nav-link">Резервация</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_21" class="nav-link">Наблюдавай</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#smib_1" class="nav-link">Рестартирай SMIB</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_22" class="nav-link">Забави рилове</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#smib_2" class="nav-link">Отключи/SMIB</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_23" class="nav-link">Извади пари</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_24" class="nav-link">Изтрий играч</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_25" class="nav-link">Свери час</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_26" class="nav-link">За Ремонт</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_27" class="nav-link">Промяна на парола на потребител</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_28" class="nav-link">Помощ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">Начален прозорец</h1>
+<p>Това е първия прозорец след вход в системата.
+В него са разположени бутони за избор на модул, аварийни бутони и бутони за бързи действия.</p>
+<blockquote>
+<p><h5 style="color:red">Аок не виждате някой от бутоните, то вероятно нямате права за достъп до
+ съответната функция или модул</h5></p>
+</blockquote>
+<p><strong>Фиг.1</strong>
+<img alt="fig.1" src="../../img/colibri/main.png" /></p>
+<h1 id="_2">Модули</h1>
+<h2 id="_3">Отчети</h2>
+<p>Модул за отчет и управление на паричните потоци.
+За повече информация погледнете <a href="order.html">Отчети</a></p>
+<h2 id="_4">Клиенти</h2>
+<p>Модул за управнение на клиентски карти. 
+За повече информация погледнете <a href="cust.html">Клиенти</a></p>
+<h2 id="_5">М.Броячи</h2>
+<p>Проверка и поправка на механичните броячи на машините.
+Отваря се прозорец:</p>
+<p><img alt="m_couter" src="../../img/colibri/m_couner.png" /></p>
+<p>От бутона печат се разпечатва лист с текущите броячи и поле за нанасяне на промените.</p>
+<p>Ако има промени в броячите с двоен клик на съответната машина се отваря</p>
+<p><img alt="m_couter" src="../../img/colibri/m_couter_edit.png" /></p>
+<p>Поправят се механичните броячи и се записват. Системата ще се върне към поправка на механични броячи.
+С червено са означени машините които са поправени.</p>
+<p>Промените няма да влязат в сила докато не бъде натиснат бутона <strong>Запис</strong> в основния прозорец.</p>
+<blockquote>
+<p><h5 style="color:red">Препоръчителна проверка на механични броячи е всеки месец. <br>
+В зависимост от коефициента е възможно да даде разлика от 2 до 50 лева.</h5></p>
+</blockquote>
+<h2 id="_6">Регион</h2>
+<p>Избор на регион в който потребителя работи.
+Отваря прозорец за промяна на региона.</p>
+<blockquote>
+<p><h5 style="color:blue">В основния прозорец се показват само машините работещи в избрания регион.</h5></p>
+</blockquote>
+<p><img alt="region" src="../../img/colibri/region.png" /></p>
+<p>Бутон <img alt="Добави" src="../../img/colibri/add_button.png" /> добавя нов регион</p>
+<h2 id="_7">Печат на отчети</h2>
+<p>Отпечатване на отчет за <strong>ДКХ</strong>
+Отваря прозорец за отчети.</p>
+<p><img alt="dkh" src="../../img/colibri/dkh.png" /></p>
+<p>Избира се тип на отчета:</p>
+<ul>
+<li>
+<p>Дневен отчет</p>
+<p>Той взима като начална дата предходния дневен, а като крайна текущата дата.</p>
+<p>Номера на дневния отчет може да бъде променен ако имате права.</p>
+<p>Събира цялата информация и я отпечатва.</p>
+</li>
+<li>
+<p>Месечен отчет
+    &gt; <h5 style="color:blue"> В случай, че не виждате <strong>От/До дата</strong>. 
+    Обърнете се към собственик за добавяне на права</h5></p>
+<p>Ако не е избрано <strong>От/До дата</strong> приема да начална дата предходния дневен, а за крайна текуща дата.</p>
+<p>При избор на <strong>От/До дата</strong> ще използва зададените стойности</p>
+<p>Номера на месечния отчет може да бъде променен ако имате права.</p>
+<p>Събира цялата информация и я отпечатва.</p>
+</li>
+</ul>
+<h2 id="_8">Начало на смяна</h2>
+<p>Започва смяна на крупие и отваря прозорец за избор на регион.</p>
+<p><img alt="region" src="../../img/colibri/region.png" /></p>
+<p>От там потребителя избира регион в който работи. </p>
+<blockquote>
+<p><h5 style="color:blue">В основния прозорец се показват само машините работещи в избрания регион.</h5></p>
+</blockquote>
+<p>От бутона <img alt="Добави" src="../../img/colibri/add_button.png" /> може да се добави нов регион.</p>
+<p>Системата винаги помни последно избрания регион. Поради чести грешки системата няма да позволи отчет ако
+няма започната смяна.</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br> Системата няма да позволи отчет ако няма начало на смяна</h5>
+<h6 style="color:blue">При грешно избран регион погледнете </h6>
+<a href="main.html#_6">Регион</a></p>
+</blockquote>
+<h2 id="_9">Справки</h2>
+<p>Модул Справки. За допълнителна информация погледни <a href="report.html">Справки</a></p>
+<h2 id="_10">Настройки</h2>
+<p>Модул Настройки. За допълнителна информация погледни <a href="config.html">Настройки</a></p>
+<h2 id="_11">Сервиз</h2>
+<p>Модул Настройки. За допълнителна информация погледни <a href="service.html">Сервиз</a></p>
+<h2 id="_12">Изход</h2>
+<p>Ще прекрати сесията на потребителя и ще върне системата към <a href="login.html">Вход</a></p>
+<h1 id="_13">Бързи действия</h1>
+<p>Бутоните намиращи се в дясно на основния прозорец</p>
+<h2 id="smib">Проверка SMIB</h2>
+<p>Ще провери дали всички SMIB контролери за работещи и имат връзка със централен сървър.</p>
+<p><img alt="SMIB_CHK" src="../../img/colibri/smib_chk.png" /></p>
+<p>В случай че се забави на определен неработещ контролер всички след него ще се оцветят в <h5 style="color:red">Червено</h5></p>
+<p>Просто изчакайте процесът да продължи.</p>
+<p>Проверените SMIB контролери са по цветове както следва:</p>
+<ul>
+<li><h5 style="color:black">Не проверен</h5></li>
+<li><h5 style="color:green">Контролера работи</h5></li>
+<li><h5 style="color:red">Няма връзка с контролера</h5></li>
+<li><h5 style="color:blue">Контролера работи и на машината има играч</h5></li>
+<li><h5 style="color:purple">Контролера е с непозната ревизия (Ъпдейтвайте)</h5></li>
+<li><h5 style="color:yellow">Контролера е с непозната ревизия (Ъпдейтвайте)</h5></li>
+</ul>
+<h2 id="_14">Намерих грешка с софтуера</h2>
+<p>Събира всички необходими лагове от избраната машина и ги изпраща към програмистите.</p>
+<p>Помага за да направим програмата по добра. Не събира броячи или лична информация, само 
+информация за грешките генерирани в кода.</p>
+<h2 id="_15">Съобщения</h2>
+<p>Позволява писане на съобщения между потребителите на системата.
+Отваря диалогов прозорец за съобщение</p>
+<p><img alt="SMIB_CHK" src="../../img/colibri/msg.png" /></p>
+<p>След въвеждане на съобщение то може да бъде четено дори от всеки потребител с двоен клик на 
+надписа </p>
+<p><code>Съобщение: Има съобщение</code></p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+Потребители без права, нямат възможност да пишат или редактират съобщения</h5></p>
+</blockquote>
+<h2 id="_16">Бонус Карти</h2>
+<p>Това е справка към момента на всички паднали клиентски бонуси, бонус карти и на всички които трябва 
+да бъдат удържани ако функцията е активирана <a href="cust.html">за клиенти</a> и/или <a href="config_bonus.html">бонус карти</a></p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+В случай че искате удържаните бонуси да се зачисляват в касата на крупието <br>
+погледнете</h5> 
+<code>Настройки/Системни/Система</code></p>
+</blockquote>
+<h2 id="_17">Извади Бил</h2>
+<p>Бързо изваждане на бил от машините. Използва се в случай когато крупието трябва бързо да намери
+пари в средата на смяната.</p>
+<p>Засича текущото състояние на била и вади на екрана сумата намираща се в касетата.
+С двоен клик се определя от кои машини ще бъде изваден била като номериран на машината ще се оцвети в</p>
+<h5 style="color:green">Зелено</h5>
+
+<p>Билът на машината ще спре да взима пари докато не се кликне повторно и
+ машината не се оцвети отново в <h5 style="color:red">Червено</h5> или не бъде натиснат бутона <strong>Извади</strong>.</p>
+<p>Ако билът не блокира погледнете <code>Настройки/Системни/Система</code> <a href="config_system.html#_2">Тук</a></p>
+<p><img alt="Извади бил" src="../../img/colibri/bill_get_fast.png" /></p>
+<p>След натискане на бутона <strong>Извади</strong> събраната сума ще се зачисли в касата на крупието, а биловете ще 
+продължат своята нормална работа.</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+Системата ще направи нулев запис в справките за отчет.
+В записа няма да има вход и изход, но ще има бил.
+Този запис няма да попречи за продължаване на работа, а е просто информативен.</h5></p>
+</blockquote>
+<h2 id="_18">Пусни бил</h2>
+<p>С случай, че бил не е тръгнал поради технически проблем след <a href="order.html">Отчет</a> или е <a href="main.html#_19">спрян</a> ще стартира била
+ на машината в работен режим.</p>
+<h2 id="_19">Спри бил</h2>
+<p>Спира била на машината на машината.</p>
+<p>Биеловете ще погасната и ще престанат за взимат пари. Може да се използва в случай, че крупието остава 
+без пари. Това ще принуди клиентите да плащат в брой, а не да пускат парите в бил.</p>
+<p>За повторно стартиране на бил използвай <a href="main.html#_18">Пусни Бил</a></p>
+<h2 id="_20">Резервация</h2>
+<p>В момента ще заключи машината по SAS.
+При повторно натискане, ще я отключи.</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+Бутонът е в разработка. 
+Пълната функционалност ще се появи в някоя от следващите ревизии.
+Логиката е машината да бъде резервирана за клиент <strong>Х</strong> до <strong>Дата и час</strong>.
+В случай, че клиента за когото е резервирана машината постави карта в нея, то тя ще се отключи автоматично.
+друг клиент няма да е в състояние да играе на посочената машина до достигане на <strong>Дата и час</strong>.</h5></p>
+</blockquote>
+<h2 id="_21">Наблюдавай</h2>
+<p>Система за наблюдение на машината в реално време.</p>
+<p>От <a href="main.html#_1">Начален прозорец</a> се избира машина</p>
+<h5 style="color:blue">В случай, че искате да изберете повече от една машина използвайте ctrl+Кликане с мишката върху машината</h5>
+
+<h5 style="color:blue">В случай, че искате да изберете всички машини използвайте shift+клик на първа машина + клик на последна машина</h5>
+
+<p>Ще се отвори прозорец за настройка на наблюдението</p>
+<p><img alt="Настройка на наблюдение" src="../../img/colibri/realtime_look_conf.png" /></p>
+<p>В ляво избирате параметрите които искате да наблюдавате, а в дясно забавяте цикъла на наблюдение с <strong>Х</strong> секунди.</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+<ul><li>Колкото повече машини изберете толкова по бавен ще става цикъла и е възможно прескачане на един два beta</li>
+<li>Ако изберете само една машина опресняването ще е толкова бързи, че ще е трудно да наблюдавате.</li>
+<li>Регулирайте от прозореца за настройки времето на опресняване.</li>
+<li>Едно завъртане на риловете отнема 1 секунда.</li>
+<li>Ако изберете машина с технически проблем, това ще предизвика голямо забавяне във всички машини.</li>
+<li>Не избирайте повредена машина или машина с повреден SMIB контролер.</li></ul></h5></p>
+</blockquote>
+<p>След което с бутона <strong>Няблюдавай</strong> ще се отвори прозорец:</p>
+<p><img alt="Наблюдение" src="../../img/colibri/realtime_lock.png" /></p>
+<p>От бутона <strong>Затвори</strong> се връщате в <a href="main.html#_1">Начален прозорец</a></p>
+<h2 id="smib_1">Рестартирай SMIB</h2>
+<p>Рестартира SMIB контролера. В огромна част от случаите е необходим само софтуерен рестарт.
+Хардуерен рестарт е нужен основно при добавяне на нови елементи към екрана на картовия модул или 
+в случай, че SMIB контролера е и визуализация и има нови елементи добавени в нея.</p>
+<h5 style="color:blue">В случай, че искате да изберете повече от една машина използвайте ctrl+Кликане с мишката върху машината</h5>
+
+<h5 style="color:blue">В случай, че искате да изберете всички машини използвайте shift+клик на първа машина + клик на последна машина</h5>
+
+<p>Хардуерния рестарт в най-бързия случай започва след една минута, това ще предизвика изгасване на дисплея 
+и зареждане на SMIB контролера отново.</p>
+<p><img alt="Рестарт" src="../../img/colibri/smib_reboot.png" /></p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+<ul>
+<li>Софтуерния рестарт се извършва веднага и отнема около 10 секунди. Не изключва контролера</li>
+<li>Хардуерния рестарт отнема минимум 1 минута до започване и около минута до пълно стартиране на системата.</li>
+<li>В картовия четец не трябва да има поставена карта (ще предизвика блокиране на контролера)</li>
+<li>Хардуерния рестарт може да бъде плануван с времето в настройка на рестарт (600 значи след 10 минути)</li></ul>
+</h5></p>
+</blockquote>
+<h2 id="_22">Забави рилове</h2>
+<p>Забавя скоростта на въртене на риловете с <strong>X Милисекунди</strong>
+Ще отвори прозорец за настройка</p>
+<p><img alt="Забави" src="../../img/colibri/rill_hold.png" /></p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+<ul><li>Времето на забавяне трябва да е кратно на 100 (100, 200, 300, 1500)</li>
+<li>При машини на ЕГТ ще аутоплей бутона ще започне да работи като старт</li></ul>
+</h5></p>
+</blockquote>
+<h2 id="smib_2">Отключи/SMIB</h2>
+<p>Системата има вградена система за сигурност по легаци бонус погледни <a href="config_system.html#smib_1">Тук</a></p>
+<h5 style="color:blue">В случай, че искате да изберете повече от една машина използвайте ctrl+Кликане с мишката върху машината</h5>
+
+<h5 style="color:blue">В случай, че искате да изберете всички машини използвайте shift+ клик на първа машина + клик на последна машина</h5>
+
+<p>В случай на поставяне на легаци бонус не минал през криптирането на SMIB контролера, машината ще се заключи.</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+Проверете за чужди устройства преди да отключите машината.</h5></p>
+</blockquote>
+<h2 id="_23">Извади пари</h2>
+<p>Авариен бутон. В случай на заложено превъртане не е възможен out на парите.
+Ако крупие направи грешка този бутон ще извади парите от машината без последствия за нейната работа.</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+Изисква AFT, погледни <a href="config_system.html#smib_1">Настройки/Системни/SMIB</a></h5></p>
+</blockquote>
+<h2 id="_24">Изтрий играч</h2>
+<p>Авариен бутон.</p>
+<p>Ако поради технически проблем картата на клиента остане закачена на контролера, 
+то тази карта не може да се използва на друга машина.</p>
+<p>Функцията за залепване на карта е от за синхронизиране между всички контролери.</p>
+<p>Докато клиента и цялата информация не бъде записана от единия контролер на централен сървър, друг
+контролер не е в състояние да зареди същата карта.</p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+Може да има технически проблем в машината който не позволява запис
+(скъсан SAS кабел, Повреден СУИЧ или повредено RG45)
+С този бутон ръчно ще освободите всички клиенти.</h5></p>
+</blockquote>
+<h2 id="_25">Свери час</h2>
+<p>Сверява дата и час на машината със зададената стойност.</p>
+<p><img alt="Дата и Час" src="../../img/colibri/date_time_set.png" /></p>
+<blockquote>
+<p><h5 style="color:red">Внимание!<br>
+Спазвайте зададения формат</h5></p>
+</blockquote>
+<h2 id="_26">За Ремонт</h2>
+<p>С двоен клик на машината се подава сигнал за проблем в машина (изгорял монитор, не работещ бутон и др.)</p>
+<p><img alt="Сервиз" src="../../img/colibri/service_new_task.png" /></p>
+<p>Номера на машината е избран автоматично.</p>
+<p>Описва се проблема и се натиска бутона <strong>Запис</strong></p>
+<p>Ако е <a href="config_system.html#_2">настроено</a> сигнала се препраща автоматично към e-mail на сервиз и
+ се записва в информационната система.</p>
+<h2 id="_27">Промяна на парола на потребител</h2>
+<p>Натиснете ctrl+p ще се отвори прозорец за промяна на паролата на потребителя</p>
+<h2 id="_28">Помощ</h2>
+<p>Натиснете F1 или fn+F1 за отваряне на документация</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

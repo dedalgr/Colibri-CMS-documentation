@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Login to Jackpot Server - Colibri CMS</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../index.html">Colibri CMS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Jackpot <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/jpserver/index.html" class="dropdown-item">Български</a>
+</li>
+            
+<li>
+    <a href="../../jpserver/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/jpserver/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CMS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/colibri/v2_1/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v2.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/colibri/v2_1/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SMIB <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.4</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/smib/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../smib/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/smib/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Visualization <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/visual/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../visual/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/visual/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#login-to-jackpot-server" class="nav-link">Login to Jackpot Server</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#main-window" class="nav-link">Main window</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#machines" class="nav-link">Machines</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#visualizations" class="nav-link">Visualizations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#groups" class="nav-link">Groups</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#events" class="nav-link">Events</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#server" class="nav-link">Server</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#users" class="nav-link">Users</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#refresh" class="nav-link">Refresh</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#write-it-down" class="nav-link">Write it down</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hold" class="nav-link">Hold</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#play" class="nav-link">Play</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#archive" class="nav-link">Archive</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#load" class="nav-link">Load</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#help_5" class="nav-link">Help</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exit" class="nav-link">Exit</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="login-to-jackpot-server">Login to Jackpot Server</h1>
+<p>Requires a stable internet connection</p>
+<p>For security purposes, all communication goes to <a href="config_system.html#internet">Redirect Server</a></p>
+<p><img alt="Login" src="../../img/colibri/jp_login.png" /></p>
+<p>User: <strong>root</strong></p>
+<p>Password: <strong>123456</strong></p>
+<h5 style = "color: red"> Important! <br>
+After login, create your user and remove __root__ <br>
+The user for logging in to the Jackpot Server does not depend on the user of the Reporting System </h5>
+
+<h1 id="main-window">Main window</h1>
+<p>Main window of the settings program.</p>
+<p><img alt="Main Window" src="../../img/colibri/jp_main.png" /></p>
+<h2 id="machines">Machines</h2>
+<p>Introduction of a new machine in the Jackpot Server</p>
+<p>To add or change machines from <a href="device.html#jackpot-entry">Server Reporting System</a></p>
+<p><img alt="Add machine" src="../../img/colibri/jp_device.png" /></p>
+<h5 style = "color: red"> Changes will not take effect until they are saved on the server </h5>
+
+<h3 id="double-click-on-a-machine">Double click on a machine</h3>
+<p>Provides information about the machine and checks for a connection to <strong>Jackpot Server</strong></p>
+<h3 id="add">Add</h3>
+<p>To add a new machine to <strong>Jackpot Server</strong></p>
+<p>Look at the IP address of the SMIB controller and which machine number in the hall corresponds to
+<a href="main.html">Home Screen</a>, you will need to enter it.</p>
+<p><img alt="New machine" src="../../img/colibri/jp_add_device.png" /></p>
+<p>Enter the required information.</p>
+<p>Do not use the option <strong>mechanical counters</strong> will be removed in future versions.</p>
+<p>Use the <strong>Save</strong> button</p>
+<h3 id="edit">Edit</h3>
+<p>Edit an existing machine</p>
+<p>Select the machine you want to edit and use the <strong>Edit</strong> button</p>
+<p><img alt="New machine" src="../../img/colibri/jp_add_device.png" /></p>
+<p>Change the required information.</p>
+<p>Do not use the option <strong>mechanical counters</strong> will be removed in future versions.</p>
+<p>Use the <strong>Save</strong> button</p>
+<h3 id="delete">Delete</h3>
+<p>Removes machine from <strong>Jackpot Server</strong></p>
+<p>Select a machine and press the <strong>Delete</strong> button</p>
+<h3 id="help">Help</h3>
+<p>Opens current documentation</p>
+<h3 id="percentage">Percentage</h3>
+<p>Reduces SMIB controller deductions to all groups</p>
+<p>At a value of 0.8 and a game of 1 lev (100 credits) the server will make a deduction of 80 credits.</p>
+<h3 id="turn-off-the-game">Turn off the game</h3>
+<p>The selected game will not be credited to <strong>Jackpot Server</strong></p>
+<p>Example: Tape measure</p>
+<h2 id="visualizations">Visualizations</h2>
+<p>Visualization settings</p>
+<p><img alt="Visualizations" src="../../img/colibri/jp_visual.png" /></p>
+<p>Visualizations can only participate in one group of mysteries</p>
+<p>Free visualizations are not used and can be added to a new group.</p>
+<p>Please release a preview before adding it to another <a href="jackpot.html#groups">group</a></p>
+<h3 id="add_1">Add</h3>
+<p>New and free visualization. It can be used for a new group
+or added to an existing one.</p>
+<p>You may need to restart the new preview when initializing.</p>
+<h3 id="delete_1">Delete</h3>
+<p>Removes the selected preview.</p>
+<p>Make sure the group is not left without previews.</p>
+<h3 id="audio-test">Audio Test</h3>
+<p>Sends a sound test signal to the selected preview.</p>
+<h3 id="help_1">Help</h3>
+<p>Opens current documentation</p>
+<h3 id="restar">Restar</h3>
+<p>Restarts the selected preview</p>
+<p>In development.</p>
+<p>It may not work</p>
+<h2 id="groups">Groups</h2>
+<p>Mystery group settings. <strong>Jackpot Server</strong> has no limit on the number of groups.</p>
+<p>Groups like <strong>classic game</strong> can contain up to 5 levels.</p>
+<p>Groups like <strong>time play</strong> can contain up to 2 levels</p>
+<p>Groups like <strong>bombs</strong> have no limit on the number of levels, but they do not have their own visualization.
+They simply send a drop signal to a preview occupied by another group.</p>
+<p><img alt="Groups" src="../../img/colibri/jp_group.png" /></p>
+<h3 id="add-a-new-group">Add a new group</h3>
+<p>Use the add button. Names are free, but must be unique.</p>
+<p>Enter a recognition name and select a game type.</p>
+<p><img alt="Add Group" src="../../img/colibri/jp_group_add.png" /></p>
+<p>Use the <strong>Save</strong> button</p>
+<p>The new group will appear in the main window.</p>
+<h3 id="preview-in-a-group">Preview in a group</h3>
+<p>To add a new preview to the group, use the <strong>right button</strong> on the group name.</p>
+<p><img alt="Add preview to group" src="../../img/colibri/jp_add_device_to_group.png" /></p>
+<p>To add vizualizations to a group use button <img alt="Add" src="../../img/colibri/list-add.png" /></p>
+<p>To remove vizualizations from group use button <img alt="Remove" src="../../img/colibri/list-remove.png" /> </p>
+<h3 id="add-a-machine-to-a-group">Add a machine to a group</h3>
+<p>To add a machine to the group, use the <strong>right button</strong> on the group name.</p>
+<p><img alt="Add machine to group" src="../../img/colibri/jp_add_device_to_group.png" /></p>
+<p>To add machine to a group use button <img alt="Add" src="../../img/colibri/list-add.png" /></p>
+<p>To remove machine from group use button <img alt="Remove" src="../../img/colibri/list-remove.png" /> </p>
+<h3 id="central-group-settings">Central group settings</h3>
+<p>This is a setting that is used in case no individual setting of <strong>level</strong> has been added.</p>
+<p><img alt="Group Setup" src="../../img/colibri/jp_group_config.png" /></p>
+<h4 id="retention-in">Retention in %</h4>
+<p>At 40% the mystery will keep 40% of the difference between <strong>Initial</strong> and __End____ value
+unless otherwise specified in the level itself.</p>
+<h4 id="active">Active</h4>
+<p>A day and time for the mystery group to be active. The rest of the time it is locked and does not rotate.</p>
+<h4 id="progressive-delay">Progressive delay</h4>
+<p>The higher the mystery, the slower it counts.</p>
+<h4 id="minimum-bet-deduction">Minimum bet deduction</h4>
+<p>When set <strong>Minimum BET</strong> for a fall, the mystery will not count if the game is weak
+from the minimum BET</p>
+<h3 id="add-a-level">Add a level</h3>
+<p>Use the <strong>right button</strong> on the group name</p>
+<p>Depending on the selected type of game are divided into three types</p>
+<h4 id="classic-game">Classic game</h4>
+<p><img alt="Classic game" src="../../img/colibri/jp_clasic_group.png" /></p>
+<h5 style = "color: red"> Attention! <br>
+In a race, when a player is inactive for more than 3 minutes <br>
+The server will remove the player from the participants and will reset all the bet </h5>
+<p>he has accumulated</p>
+<ul>
+<li>
+<p>Enter a unique name for recognition</p>
+</li>
+<li>
+<p>Base is the amount from which the mystery of initialization will begin</p>
+<p>After falling to the base will add the value of the accumulated hiden</p>
+<p>At initialization to borrow an initial value at will otherwise the mystery will
+starts with an amount of <strong>0</strong></p>
+<p>If you do not want to have an Initial Value, after saving to the server, open in edit mode and
+make the base amount <strong>0</strong></p>
+</li>
+<li>
+<p>Retention in% is the retention of a certain% before falling</p>
+<p>If you enter a value of 40 for a mystery with limits of 100-200, the mystery will fall after BGN 140. <br>
+Leave 0 to disable the <br> option
+If the hold rate is set in group settings and this option is disabled it will
+the group setting will be used
+This option has a higher priority, in case of activation the group setting will be ignored.</p>
+</li>
+<li>
+<p>From the amount</p>
+<p>The amount at which the mystery will enter active fall mode</p>
+</li>
+<li>
+<p>Up to the amount</p>
+<p>The amount that the mystery should not exceed</p>
+</li>
+<li>
+<p>Deduction in %</p>
+<p>1 equates 1% per 100 credits = 1 credit <br>
+at a ratio of 0.01 one credit = 0.01 stotinki <br>
+Look at the set factor of the machine
+<h5 style = "color: red"> Attention! <br>
+For machines with a ratio other than 0.01, the mystery will not fall on credit, <br>
+due to inability to pay the full amount. <br>
+Pay the amount by hand! </h5></p>
+</li>
+<li>
+<p>Hidden %</p>
+<p>Percentage for deduction of hidden <strong>hiden</strong> value <br>
+1 equates 1% per 100 credits = 1 credit <br>
+at a ratio of 0.01 one credit = 0.01 stotinki <br>
+Look at the set factor of the machine.</p>
+</li>
+<li>
+<p>Classic mystery</p>
+<p>After reaching a random amount, the mystery will fall into the credit of the machine</p>
+</li>
+<li>
+<p>Racing mystery</p>
+<p>Once a random amount is reached, the mystery will enter racing mode
+Will declare a value to fall
+All competitors start from <strong>0</strong> <br>
+The contestants with the most accumulated <strong>bet</strong> will appear on the scoreboard <br>
+After reaching the pre-announced amount, the server will decide who the winning player is. <br></p>
+<p><h5 style = "color: red"> Attention! <br>
+Only players raised on the board have a chance to win <br>
+The biggest bet doesn't have to be a win-win. <br>
+The accumulated bet only increases the chance. </h5></p>
+<p>```
+  Total Bet = 100
+  Total players = 3
+  Player 1 bet = 50
+  Player 2 bet = 30
+  Player 3 bet = 20</p>
+<p>Player one has a 50% chance of winning.
+   ```</p>
+</li>
+<li>
+<p>Range in competition</p>
+<p>Two amounts from which an amount will be chosen which will be added to the amount of the mystery
+when entering a race.</p>
+<p><h5 style = "color: red"> Attention! <br>
+It is possible that the mystery exceeds the amount set in the field <strong>To amount</strong> </h5></p>
+<p><code>Amount up to = 100
+    Mystery enters race mode = 90
+    Adds random value between ranges in races: 10 to 50
+    Selects a random value 20
+    Announces a drop of BGN 110</code>
+* Number of players in a competition</p>
+<p>From 2 to 5 players on the board</p>
+</li>
+<li>
+<p>X2</p>
+<p>In a certain interval of time the sum of the mystery will be multiplied by 2 <br>
+<h5 style = "color: red"> Attention! <br>
+With a mystery value of 100 and an active option from 19 to 20 hours: <br>
+If the mystery falls in the time interval, its value will be 100 * 2 </h5></p>
+</li>
+<li>
+<p>Minimal bet</p>
+<p>Not used in competition. This is the minimum amount a player must spin,
+to win a mystery.</p>
+</li>
+<li>
+<p>Mandatory card</p>
+<p>Requires card momul.</p>
+<p>In the absence of a client card, the mystery does not deduct.</p>
+</li>
+</ul>
+<h4 id="time-game">Time game</h4>
+<p>This is a time-falling game and there is no upper limit on the amount accumulated.</p>
+<p>Maximum number of levels 2.</p>
+<h5 style = "color: red"> Attention! <br>
+Mysteries of the time type can fall only once in the specified time interval </h5>
+
+<p><img alt="Time game" src="../../img/colibri/jp_time_group.png" /></p>
+<ul>
+<li>
+<p>Name</p>
+<p>The name must be unique</p>
+</li>
+<li>
+<p>Period</p>
+<ul>
+<li>
+<p>Living room</p>
+<p>The mystery will be activated every day in the specified time interval</p>
+</li>
+<li>
+<p>Weekly</p>
+<p>Select the days on which you want the mystery to be activated</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Value</p>
+<p>This is a value from which the mystery will always begin after a fall.</p>
+</li>
+<li>
+<p>From Hour</p>
+<p>Time for the mystery to enter <strong>Active</strong> mode</p>
+</li>
+<li>
+<p>Until Time</p>
+<p>Time for the mystery to enter <strong>Inactive</strong> mode</p>
+</li>
+<li>
+<p>Fixed value</p>
+<p>The mystery does not accumulate. The declared value falls.</p>
+</li>
+<li>
+<p>Accumulation</p>
+<p>The mystery accumulates with the deduction rate</p>
+<p><h5 style = "color: red"> Attention! <br>
+If the mystery does not fall within the specified interval, its value will not be reset. <br>
+It will be transferred in the next time interval </h5></p>
+<p><code>Day one initial value = BGN 50
+    At the end of day 1 accumulated = BGN 10
+    Day 2 initial value = BGN 60
+    End of day 2 accumulated = BGN 50
+    Day 3 initial value = BGN 110
+    Fall and end of day 3
+    Day 4 initial value = BGN 50</code></p>
+</li>
+<li>
+<p>Minimal bet</p>
+<p>A bet over which a player must play to win the mystery.</p>
+</li>
+</ul>
+<h4 id="bombs">Bombs</h4>
+<p>The difference with <strong>Time play</strong> is:</p>
+<ul>
+<li>
+<p>no limit on the number of levels</p>
+</li>
+<li>
+<p>Does not require its own visualization</p>
+</li>
+<li>
+<p>Time intervals can contain minutes</p>
+<p>18.15 = 6 hours and 15 minutes.</p>
+</li>
+</ul>
+<h3 id="help_2">Help</h3>
+<p>Opens the current documentation</p>
+<h2 id="events">Events</h2>
+<p>Reports of fallen mysteries</p>
+<p><img alt="Help" src="../../img/colibri/jp_down_log.png" /></p>
+<p>View <a href="report.html">Reports</a></p>
+<h2 id="server">Server</h2>
+<p>Server information and rental server activation</p>
+<p><img alt="Server" src="../../img/colibri/jp_config.png" /></p>
+<h3 id="activate">Activate</h3>
+<p>Extends the date of operation of a rental server.</p>
+<p>Contact with <a href="mailto:grigor.kolev@gmail.com"> Grigor Kolev </a></p>
+<h3 id="crc">CRC</h3>
+<p>Calculates and checks whether the CRC of the server corresponds to the version registered in <strong>DKH</strong></p>
+<p>Any unauthorized change will cause the <strong>Jackpot Server</strong> to be blocked.</p>
+<h3 id="help_3">Help</h3>
+<p>Opens the current documentation</p>
+<h2 id="users">Users</h2>
+<p>User Management on <strong>Jackpot Server</strong>.</p>
+<p><strong>Jackpot Server</strong> users are independent of <a href="user.html">system users</a></p>
+<p><img alt="Users" src="../../img/colibri/jp_user.png" /></p>
+<h3 id="add_2">Add</h3>
+<p>Adds a new user</p>
+<h3 id="remove">Remove</h3>
+<p>Select a user to remove and use the <strong>Delete</strong> button</p>
+<h5 style = "color: red"> Attention! <br>
+Remove all users or forgot password <br>
+will not interfere with the operation of the server. <br>
+But access to settings will be revoked without the possibility of recovery. </h5>
+
+<h3 id="help_4">Help</h3>
+<p>Opens the current documentation</p>
+<h2 id="refresh">Refresh</h2>
+<p>Retrieves the necessary information from the server to change the settings</p>
+<h5 style = "color: red"> Attention! <br>
+If you are unsure of the settings you have made <br>
+Re-grow. This will remove all changes. </h5>
+
+<h4 style = "color: red"> Attention! <br>
+Make sure you have a stable internet connection with the server. <br>
+If the information is recorded incorrectly, try saving again <br>
+</h4>
+
+<h4 style = "color: blue"> Attention! <br>
+The information is transmitted through technology __Key, Value__ <br>
+Each key must be stored in and intact or will not be saved
+In case of communication interruption, it is possible to save one change, not another. <br>
+We recommend changes to the server from __local network__
+</h4>
+
+<h2 id="write-it-down">Write it down</h2>
+<p>Saves all changes to the server.</p>
+<h5 style = "color: red"> Attention! <br>
+Do not make changes to the server during intense gameplay </h5>
+
+<h2 id="hold">Hold</h2>
+<p>Stops the rotation of the server.</p>
+<p>All mysteries will stop the deduction</p>
+<h2 id="play">Play</h2>
+<p>Starts server rotation.</p>
+<p>All mysteries will begin to count.</p>
+<h2 id="archive">Archive</h2>
+<p>Creates an archive of information from the <strong>Jackpot Server</strong></p>
+<p>Please use this option, it is not placed accidentally.</p>
+<p>You can make archives in for many casinos, but only the last one for one casino will be active.</p>
+<h2 id="load">Load</h2>
+<p>Loads information from a created archive.</p>
+<h2 id="help_5">Help</h2>
+<p>Opens the current documentation</p>
+<h2 id="exit">Exit</h2>
+<p>Exit the program and serve in <a href="jackpot.html#login-to-jackpot-server">login window</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Users, Groups and access rights - Colibri CMS</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../index.html">Colibri CMS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Jackpot <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/jpserver/index.html" class="dropdown-item">Български</a>
+</li>
+            
+<li>
+    <a href="../../jpserver/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/jpserver/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CMS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.2</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/colibri/v2_1/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v2.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/colibri/v2_1/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/colibri/v2_1/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SMIB <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.4</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/smib/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../smib/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/smib/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Visualization <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Version v1.1</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../bg/visual/index.html" class="dropdown-item">Начало</a>
+</li>
+            
+<li>
+    <a href="../../visual/index.html" class="dropdown-item">English</a>
+</li>
+            
+<li>
+    <a href="../../../ro/visual/index.html" class="dropdown-item">România</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#users-groups-and-access-rights" class="nav-link">Users, Groups and access rights</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#add-edit-group" class="nav-link">Add / Edit Group</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#add-edit-user" class="nav-link">Add / Edit User</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#active-users" class="nav-link">Active users</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hold-missing" class="nav-link">Hold missing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="users-groups-and-access-rights">Users, Groups and access rights</h1>
+<p>Program access rights system</p>
+<p><img alt="Main Window" src="../../img/colibri/user.png" /></p>
+<h2 id="add-edit-group">Add / Edit Group</h2>
+<p>Adds and edits groups and group access rights.</p>
+<p>You can see all users in a group using the filler
+<strong>Single Click</strong> on the group name <a href="user.html#users-groups-and-access-rights">left of the main window</a></p>
+<p>To add a new group use the <strong>Add group</strong> button</p>
+<p>To edit an existing group <strong>Double click on the group</strong> <a href="user.html#users-groups-and-access-rights">left of the main window</a></p>
+<p>A window for adding a group is loaded</p>
+<p><img alt="Add Group" src="../../img/colibri/user_group.png" /></p>
+<p>The name of the group is free, but it must be unique.
+Recognizes <strong>lowercase</strong> and <strong>capital</strong> letters</p>
+<p>A created group cannot be removed, deleted or deactivated.</p>
+<p>To the left of the window are listed all the rights by windows.</p>
+<p>To the right are the rights that the group owns.</p>
+<ul>
+<li>
+<p>Add rights.</p>
+<p>Select right on the left of the window and click <img alt="Add" src="../../img/colibri/Gnome-Go-Next-32.png" /></p>
+<p>The right will appear to the right of the user's rights.</p>
+<p>In case you mark an entire group of rights, it will be added with all possible rights in it.</p>
+</li>
+<li>
+<p>Removing rights.</p>
+<p>Select right on the right of the window and click <img alt="Remove" src="../../img/colibri/Gnome-Go-Previous-32.png" /></p>
+<p>The right will disappear from the rights that the user has.</p>
+<p>In case you mark an entire group of rights, it will be removed with all possible rights in it.</p>
+</li>
+<li>
+<p>Turn off the bill</p>
+<p>Indicates to the program whether it will be locked during reporting and / or extraction.</p>
+<p><a href="order.html">View</a></p>
+</li>
+<li>
+<p>Auto E-Mail</p>
+<p>When you run <a href="main.html#print-reports">daily report</a>, it will automatically send a copy to the owner.</p>
+<p>It will automatically send information about new repairs to <a href="service.html">service</a> and the owner.</p>
+<p>When repairs are made, notify the owner.</p>
+</li>
+<li>
+<p>Take out the whole bill</p>
+<p>When <a href="order.html#bill">billing report</a> all machines will be selected for subtraction.</p>
+<p>In case you do not remove the ridge on a specific machine use <strong>Double click</strong></p>
+</li>
+<li>
+<p>E-Mail</p>
+<p>Email to <strong>Email1,Email2</strong></p>
+</li>
+<li>
+<p>E-MAIL Service</p>
+<p>Email service look <strong>Auto E-mail</strong> and <a href="service.html">Service</a></p>
+</li>
+<li>
+<p>Subject</p>
+<p>Title of E-Mail look <strong>Auto E-mail</strong>
+Used to identify from which casino and which POS terminal the message was sent.</p>
+</li>
+<li>
+<p>Enable Selection</p>
+<p>The manager should not have the right to change high-priority groups and users
+as <strong>Owner</strong></p>
+<p>Selecting this option will indicate that the group has a low priority.</p>
+<p>In this case, if group editing rights have been removed from the <strong>Manager</strong> group,
+but user creation and editing rights have been added, everyone in the manager group will be able to
+add edit users in the <strong>Croup</strong> group without being able to change rights.</p>
+<blockquote>
+<p><h5 style = "color: red"> Attention! <br>
+We remind you that each button must be displayed in windows <br>
+Or if a user has access to a user's edit, <br>
+But in <strong>Home</strong> the <strong>Settings</strong> <br> button is not displayed
+and/or in <strong>Settings</strong> the <strong>Users</strong> <br> button is not displayed
+access will be <strong>No possible</strong>
+</h5></p>
+<p><h4 style = "color: blue"> <br> <br>
+When changing the rights, the user will acquire the new rights after re-logging in. </h4></p>
+</blockquote>
+<ul>
+<li>
+<p>PKO E-mail</p>
+<p>Enabling this option will send an e-mail to the owner with the turnover after a shift is completed</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="add-edit-user">Add / Edit User</h2>
+<p>You can see all users in a group using the filler
+<strong>Single Click</strong> on the group name <a href="user.html#users-groups-and-access-rights">left of the main window</a></p>
+<p>To add a new user use the <strong>New User</strong> button</p>
+<p>To edit an existing <strong>Double click of the selected user</strong> <a href="user.html#users-groups-and-access-rights">to the right of the main window</a></p>
+<p>A window for adding a user opens</p>
+<p><img alt="Add User" src="../../img/colibri/add_user.png" /></p>
+<p>Usernames must be unique. Recognizes <strong>lowercase</strong> and <strong>capital</strong> letters.</p>
+<p>Once added, a User cannot be removed but only deactivated.</p>
+<ul>
+<li>
+<p>Username</p>
+<p>Free text recognition</p>
+</li>
+<li>
+<p>Password</p>
+<p>Login password <a href="main.html#change-user-password">can be changed</a></p>
+</li>
+<li>
+<p>Active/Not Active</p>
+<p>If the user is <strong>Not Active</strong> will not be displayed at <a href="login.html">Login</a></p>
+</li>
+<li>
+<p>Group</p>
+<p>The user will acquire the rights of the selected <strong>Group</strong> from the drop-down menu</p>
+</li>
+<li>
+<p>Add Map</p>
+<p><a href="config_system.html#printers-and-readers">Requires active RFID reader</a></p>
+<p>It opens</p>
+<p><img alt="RFID" src="../../img/colibri/add_cust_cart.png" /></p>
+<p>Insert a card into the reader and press <strong>Save</strong></p>
+<p>The card will be initialized with the user and will allow <a href="login.html">card login</a> and
+<a href="config_system.html">jumping quay system</a></p>
+</li>
+</ul>
+<h2 id="active-users">Active users</h2>
+<p>Shows all logged in users.</p>
+<p><img alt="Users Log In" src="../../img/colibri/activ_user.png" /></p>
+<p>If <a href="config_system.html">settings</a> is set, users can be discarded with <strong>Double-click</strong></p>
+<blockquote>
+<p><h5 style = "color: red"> Attention! <br>
+No croup discards tested. </h5></p>
+</blockquote>
+<h2 id="hold-missing">Hold missing</h2>
+<p>In case the lack of a croupier is deducted from the salary</p>
+<p>it can be removed from here.</p>
+<p>Select a user to the right of the main window and press <strong>Help Miss</strong></p>
+<p>It will open</p>
+<p><img alt="Hold Absence" src="../../img/colibri/user_hold_mony.png" /></p>
+<p>A total obligation is the obligation accumulated during the entire period of the user's work.</p>
+<p>All payments are deducted from the amount.</p>
+<p>In case of an amount with a negative sign, the user has overpaid all obligations to the organizer.</p>
+<p>Enter the amount to be deducted and press <strong>Save</strong></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
